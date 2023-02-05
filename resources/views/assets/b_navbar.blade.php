@@ -1,6 +1,6 @@
 <main>
 
-<!-- <header class="site-header">
+    <!-- <header class="site-header">
     <div class="container">
         <div class="row">
 
@@ -16,43 +16,42 @@
 </header> -->
 
 
-<nav class="navbar navbar-expand-lg">
-    <div class=" container">
-        <a class="navbar-brand" href="index.html">
-            UNICON KALSEL
-        </a>
+    <nav class="navbar navbar-expand-lg">
+        <div class=" container">
+            <a class="navbar-brand" href="index.html">
+                <img src="{{asset('assets/tema')}}/images/kalselunite.png" type="png" poster="">
+            </a>
 
-        <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+            <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_1">Home</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_2">About</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">About</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_3">Guest Stars</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Guest Stars</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_4">Community</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Community</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_5">Contact Us</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_5">Contact Us</a>
+                    </li>
 
 
-                <!-- <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Dropdown link
@@ -64,9 +63,9 @@
                     </ul>
                 </li> -->
 
-            </ul>
+                </ul>
 
-            <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+                <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
