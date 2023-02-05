@@ -59,4 +59,9 @@
     <div class="img-wrap">
         <img src="{{asset('assets/tema')}}/images/background.jpg" type="jpg" class="custom-img" poster="">
     </div>
+
+    <div class="img-wrap">
+        <img src="{{asset('assets/tema')}}/images/background.png" type="png" class="custom-img" poster="">
+        <img src="{{asset('assets/tema')}}/images/charasset1.png" type="png" class="custom-img2" poster="">
+    </div>
 </section>
