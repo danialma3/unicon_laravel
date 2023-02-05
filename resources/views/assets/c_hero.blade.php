@@ -7,8 +7,9 @@
             <div class="col-12 mt-auto text-center">
                 <!-- <small>Festava Live Presents</small> -->
 
-                <h1 class="text-white">EXPERIENCE<br>POP CULTURE</h1>
-                <h3>LIKE NEVER BEFORE</h3>
+                <h1 class="text-white">EXPERIENCE</h1>
+                <h1>POP CULTURE</h1>
+                <h2>LIKE NEVER BEFORE</h2>
 
                 <!-- <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a> -->
             </div>
@@ -30,9 +31,9 @@
 
             <div class="social-share">
                 <ul class="social-icon d-flex align-items-center justify-content-center">
-                    <span class="text-white me-3">Share:</span>
+                    <span class="text-white me-3">Our Instagram:</span>
 
-                    <li class="social-icon-item">
+                    <!-- <li class="social-icon-item">
                         <a href="#" class="social-icon-link">
                             <span class="bi-facebook"></span>
                         </a>
@@ -42,10 +43,10 @@
                         <a href="#" class="social-icon-link">
                             <span class="bi-twitter"></span>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="social-icon-item">
-                        <a href="#" class="social-icon-link">
+                        <a href="https://www.instagram.com/kalsel.unite/" class="social-icon-link">
                             <span class="bi-instagram"></span>
                         </a>
                     </li>
@@ -55,8 +56,7 @@
     </div>
     </div>
 
-    <div class="video-wrap">
-        <img src="{{asset('assets/tema')}}/images/background.jpg" type="jpg" class="custom-video" poster="">
-
+    <div class="img-wrap">
+        <img src="{{asset('assets/tema')}}/images/background.jpg" type="jpg" class="custom-img" poster="">
     </div>
 </section>
