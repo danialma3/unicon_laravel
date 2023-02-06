@@ -4,7 +4,7 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">Festava Live</h2>
+                        <h2 class="text-white mb-lg-0">KALSEL UNITE 2023</h2>
                     </div>
 
                     <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
@@ -60,15 +60,15 @@
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Artists</a>
+                            <a href="#" class="site-footer-link">Guest Stars</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Schedule</a>
+                            <a href="#" class="site-footer-link">Community</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Pricing</a>
+                            <a href="#" class="site-footer-link">Contact Us</a>
                         </li>
 
                         <li class="site-footer-link-item">
@@ -97,7 +97,7 @@
                     <h5 class="site-footer-title mb-3">Location</h5>
 
                     <p class="text-white d-flex mt-3 mb-2">
-                        Silang Junction South, Tagaytay, Cavite, Philippines</p>
+                        Banjarbaru, South Borneo</p>
 
                     <a class="link-fx-1 color-contrast-higher mt-3" href="#">
                         <span>Our Maps</span>
@@ -118,7 +118,7 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © 2036 Festava Live Company</p>
+                        <p class="copyright-text">Copyright © 2023 KALSEL UNITE</p>
                     </div>
 
                     <div class="col-lg-8 col-12 mt-lg-5">
@@ -131,9 +131,9 @@
                                 <a href="#" class="site-footer-link">Privacy Policy</a>
                             </li>
 
-                            <li class="site-footer-link-item">
+                            <!-- <li class="site-footer-link-item">
                                 <a href="#" class="site-footer-link">Your Feedback</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
