@@ -23,6 +23,8 @@
 
     <link href="{{asset('assets/tema')}}/css/templatemo-festava-live.css" rel="stylesheet">
 
+    <link href="{{asset('assets/tema')}}/images/unicontab.png" rel="shortcut icon">
+
     <!--
 
 TemplateMo 583 Festava Live
