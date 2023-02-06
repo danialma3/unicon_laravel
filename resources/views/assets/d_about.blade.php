@@ -25,7 +25,7 @@
 
                     <div class="col-lg-6 col-12">
                         <div class="about-text-wrap">
-                            <img src="{{asset('assets/tema')}}/images/gambar_cosplay.jpg" class="about-image img-fluid">
+                            <img src="{{asset('assets/tema')}}/images/about-community.jpeg" class="about-image img-fluid">
 
                             <!-- <div class="about-text-info d-flex">
                                 <div class="d-flex">
