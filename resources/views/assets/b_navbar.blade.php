@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class=" container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/tiket">
                 <img src="{{asset('assets/tema')}}/images/uniconweb.png" type="png" poster="">
             </a>
 
