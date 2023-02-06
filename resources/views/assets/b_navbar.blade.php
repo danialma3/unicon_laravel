@@ -65,7 +65,7 @@
 
                 </ul>
 
-                <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Beli Tiketnya!</a>
+                <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Beli Tiket!</a>
             </div>
         </div>
     </nav>
