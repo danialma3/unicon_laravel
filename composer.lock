@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "073ea5e75799f61b0733f0164ede7f4f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5201,6 +5201,59 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.6"
             },
             "time": "2023-01-03T09:29:04+00:00"
+        },
+        {
+            "name": "tumainimosha/laravel-coming-soon",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tumainimosha/laravel-coming-soon.git",
+                "reference": "9dd4890c5837f02404be3102773962d2e037d61f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tumainimosha/laravel-coming-soon/zipball/9dd4890c5837f02404be3102773962d2e037d61f",
+                "reference": "9dd4890c5837f02404be3102773962d2e037d61f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.13",
+                "orchestra/testbench": "~3.7.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "snw\\ComingSoon\\ComingSoonServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "snw\\ComingSoon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tumaini Mosha",
+                    "email": "princeton.mosha@gmail.com"
+                }
+            ],
+            "description": "Simple Comming Soon page",
+            "support": {
+                "issues": "https://github.com/tumainimosha/laravel-coming-soon/issues",
+                "source": "https://github.com/tumainimosha/laravel-coming-soon/tree/1.4.1"
+            },
+            "abandoned": true,
+            "time": "2022-05-21T13:40:12+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

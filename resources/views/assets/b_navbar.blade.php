@@ -22,7 +22,7 @@
                 <img src="{{asset('assets/tema')}}/images/uniconweb.png" type="png" poster="">
             </a>
 
-            <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+            <a href="/tiket" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,7 +65,7 @@
 
                 </ul>
 
-                <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Beli Tiket!</a>
+                <a href="/tiket" class="btn custom-btn d-lg-block d-none">Beli Tiket!</a>
             </div>
         </div>
     </nav>

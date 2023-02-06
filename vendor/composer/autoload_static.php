@@ -43,6 +43,10 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         array (
             'voku\\' => 5,
         ),
+        's' => 
+        array (
+            'snw\\ComingSoon\\' => 15,
+        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -177,6 +181,10 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'snw\\ComingSoon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tumainimosha/laravel-coming-soon/src',
         ),
         'Whoops\\' => 
         array (
@@ -320,8 +328,8 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -504,6 +512,7 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -5441,6 +5450,10 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'snw\\ComingSoon\\ComingSoonServiceProvider' => __DIR__ . '/..' . '/tumainimosha/laravel-coming-soon/src/ComingSoonServiceProvider.php',
+        'snw\\ComingSoon\\Http\\Controllers\\ComingSoonController' => __DIR__ . '/..' . '/tumainimosha/laravel-coming-soon/src/Http/Controllers/ComingSoonController.php',
+        'snw\\ComingSoon\\Mail\\ComingSoonMailable' => __DIR__ . '/..' . '/tumainimosha/laravel-coming-soon/src/Mail/ComingSoonMailable.php',
+        'snw\\ComingSoon\\Models\\ComingSoon' => __DIR__ . '/..' . '/tumainimosha/laravel-coming-soon/src/Models/ComingSoon.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

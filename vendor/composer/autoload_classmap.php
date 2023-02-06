@@ -9,6 +9,7 @@ return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -4946,5 +4947,9 @@ return array(
     'Whoops\\Util\\Misc' => $vendorDir . '/filp/whoops/src/Whoops/Util/Misc.php',
     'Whoops\\Util\\SystemFacade' => $vendorDir . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
     'Whoops\\Util\\TemplateHelper' => $vendorDir . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+    'snw\\ComingSoon\\ComingSoonServiceProvider' => $vendorDir . '/tumainimosha/laravel-coming-soon/src/ComingSoonServiceProvider.php',
+    'snw\\ComingSoon\\Http\\Controllers\\ComingSoonController' => $vendorDir . '/tumainimosha/laravel-coming-soon/src/Http/Controllers/ComingSoonController.php',
+    'snw\\ComingSoon\\Mail\\ComingSoonMailable' => $vendorDir . '/tumainimosha/laravel-coming-soon/src/Mail/ComingSoonMailable.php',
+    'snw\\ComingSoon\\Models\\ComingSoon' => $vendorDir . '/tumainimosha/laravel-coming-soon/src/Models/ComingSoon.php',
     'voku\\helper\\ASCII' => $vendorDir . '/voku/portable-ascii/src/voku/helper/ASCII.php',
 );
