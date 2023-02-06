@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class=" container">
             <a class="navbar-brand" href="index.html">
-                <img src="{{asset('assets/tema')}}/images/kalselunite.png" type="png" poster="">
+                <img src="{{asset('assets/tema')}}/images/uniconweb.png" type="png" poster="">
             </a>
 
             <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
