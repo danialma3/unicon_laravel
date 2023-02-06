@@ -99,7 +99,7 @@
                     <p class="text-white d-flex mt-3 mb-2">
                         Banjarbaru, South Borneo</p>
 
-                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="https://www.google.com/maps/place/Lapangan+Murjani/@-3.440697,114.8308698,15z/data=!4m2!3m1!1s0x0:0x39e8a18c6ab03325?sa=X&ved=2ahUKEwj04OPN0oD9AhXpiGMGHRLKCzkQ_BJ6BQiCARAH">
                         <span>Our Maps</span>
                         <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
