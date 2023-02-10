@@ -359,7 +359,7 @@ strong {
   line-height: normal;
   transition: all 0.3s;
   padding: 10px 20px;
-  clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%); 
+  clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%);
 }
 
 .custom-btn:hover {
@@ -442,6 +442,13 @@ strong {
 .navbar {
   background: black;
   z-index: 99;
+}
+
+.text-by {
+  margin: auto !important;
+  padding-right: 14px !important;
+  font-family: sans-serif ;
+  font-size: 13px !important;
 }
 
 .navbar-brand,
@@ -580,7 +587,7 @@ strong {
 -----------------------------------------*/
 .about-section {
   /* background-image: url('../images/edward-unsplash-blur.jpg'); */
-  background-color: #424083;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -995,6 +1002,14 @@ strong {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
+  .logo-kalsel-unite {
+    display: none !important;
+  }
+
+  .text-by {
+    display: none !important;
+  }
+
   h1 {
     font-size: 62px;
   }
@@ -1152,6 +1167,16 @@ strong {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .logo-kalsel-unite {
+    display: none !important;
+  }
+
+  .text-by {
+    display: none !important;
+  }
+}
+
 
 
 @media screen and (max-width: 480px) {
@@ -1236,6 +1261,14 @@ strong {
 
   h5 {
     font-size: 20px;
+  }
+
+  .logo-kalsel-unite {
+    display: none;
+  }
+
+  .text-by {
+    display: none;
   }
 }
 

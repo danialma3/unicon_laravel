@@ -1,0 +1,5 @@
+@include('assets.landing.a_header')
+@include('assets.landing.b_navbar')
+@include('assets.landing.c_hero')
+@include('assets.landing.d_about')
+@include('assets.landing.i_footer')

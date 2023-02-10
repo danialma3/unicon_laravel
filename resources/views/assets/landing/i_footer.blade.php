@@ -10,34 +10,23 @@
                     <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
                         <ul class="social-icon d-flex justify-content-lg-end">
                             <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-twitter"></span>
+                                <a href="https://www.facebook.com/profile.php?id=100089541734509" class="social-icon-link">
+                                    <span class="bi-facebook"></span>
                                 </a>
                             </li>
 
                             <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-apple"></span>
+                                <a href="https://www.tiktok.com/@kalselunite" class="social-icon-link">
+                                    <span class="bi-tiktok"></span>
                                 </a>
                             </li>
 
                             <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
+                                <a href="https://www.instagram.com/kalsel.unite/" class="social-icon-link">
                                     <span class="bi-instagram"></span>
                                 </a>
                             </li>
 
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-youtube"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-pinterest"></span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -52,27 +41,15 @@
 
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
+                            <a href="https://www.facebook.com/profile.php?id=100089541734509" class="site-footer-link">Facebook</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">About</a>
+                            <a href="https://www.tiktok.com/@kalselunite" class="site-footer-link">Tiktok</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Guest Stars</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Community</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact Us</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact</a>
+                            <a href="https://www.instagram.com/kalsel.unite/" class="site-footer-link">Instagram</a>
                         </li>
                     </ul>
                 </div>
@@ -81,14 +58,14 @@
                     <h5 class="site-footer-title mb-3">Have a question?</h5>
 
                     <p class="text-white d-flex mb-1">
-                        <a href="tel: 090-080-0760" class="site-footer-link">
-                            090-080-0760
+                        <a href="tel: 0895-3405-15933" class="site-footer-link">
+                        0895-3405-15933
                         </a>
                     </p>
 
                     <p class="text-white d-flex">
-                        <a href="mailto:hello@company.com" class="site-footer-link">
-                            hello@company.com
+                        <a href="mailto:kalselunite@gmail.com" class="site-footer-link">
+                        kalselunite@gmail.com
                         </a>
                     </p>
                 </div>
@@ -124,16 +101,13 @@
                     <div class="col-lg-8 col-12 mt-lg-5">
                         <ul class="site-footer-links">
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                                <p href="" class="site-footer-link">Terms &amp; Conditions</p>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Privacy Policy</a>
+                                <a href="https://www.termsfeed.com/live/fd4ec0c4-9a85-4696-b217-5d61b7104847" class="site-footer-link">Privacy Policy</a>
                             </li>
 
-                            <!-- <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Your Feedback</a>
-                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -141,18 +115,12 @@
         </div>
     </footer>
 
-    <!--
-
-T e m p l a t e M o
-
--->
-
     <!-- JAVASCRIPT FILES -->
     <script src="{{asset('assets/tema')}}/js/jquery.min.js"></script>
     <script src="{{asset('assets/tema')}}/js/popper.min.js"></script>
     <script src="{{asset('assets/tema')}}/js/bootstrap.min.js"></script>
     <script src="{{asset('assets/tema')}}/js/jquery.sticky.js"></script>
-    <script src="{{asset('assets/tema')}}/js/click-scroll.js"></script>
+    <script src="{{asset('assets/tema')}}/js/click-scroll.js?07022023.001"></script>
     <script src="{{asset('assets/tema')}}/js/custom.js"></script>
 
 </body>

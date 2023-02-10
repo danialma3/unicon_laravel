@@ -34,20 +34,14 @@ $dt = \Carbon\Carbon::create($value['snw_year'], $value['snw_month'], $value['sn
                 </form>
                 @endif
                 <ul class="links">
-                    @if (strlen($value['snw_facebook']))
-                        <li><a href="{{$value['snw_facebook']}}">Facebook</a></li>
-                    @endif
-                    @if (strlen($value['snw_twitter']))
-                        <li><a href="{{$value['snw_twitter']}}">Twitter</a></li>
+                    @if (strlen($value['snw_instagram']))
+                        <li><a href="https://www.facebook.com/profile.php?id=100089541734509">Facebook</a></li>
                     @endif
                     @if (strlen($value['snw_instagram']))
-                        <li><a href="{{$value['snw_instagram']}}">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@kalselunite">Tiktok</a></li>
                     @endif
-                    @if (strlen($value['snw_github']))
-                        <li><a href="{{$value['snw_github']}}">Github</a></li>
-                    @endif
-                    @if (strlen($value['snw_mail']))
-                        <li><a href="mailto:{{$value['snw_mail']}}">Email Us</a></li>
+                    @if (strlen($value['snw_instagram']))
+                        <li><a href="https://www.instagram.com/kalsel.unite/">Instagram</a></li>
                     @endif
                 </ul>
             </div>
@@ -65,10 +59,10 @@ $dt = \Carbon\Carbon::create($value['snw_year'], $value['snw_month'], $value['sn
     var $clock = $('#clock');
     $('#clock').countdown('{{$dt}}', function(event) {
         var $this = $(this).html(event.strftime(''
-            + '<span>%D<div>days</div></span>'
-            + '<span>%H<div>hr</div></span>'
-            + '<span>%M<div>min</div></span>'
-            + '<span>%S<div>sec</div></span>'));
+            + '<span>%D<div>hari</div></span>'
+            + '<span>%H<div>jam</div></span>'
+            + '<span>%M<div>menit</div></span>'
+            + '<span>%S<div>detik</div></span>'));
         });
     </script>
 </html>

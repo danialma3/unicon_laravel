@@ -14,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/tiket', function () {
-    return view('comingsoon::comingsoon');
-});
+Route::get('/comingsoon', [App\Http\Controllers\ComingsoonController::class, 'comingsoon'])->name('comingsoon');
+Route::get('/tiket', [App\Http\Controllers\TiketController::class, 'tiket'])->name('tiket');
