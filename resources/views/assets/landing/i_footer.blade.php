@@ -37,21 +37,6 @@
         <div class="row">
 
             <div class="col-lg-6 col-12 mb-4 pb-2">
-                <!-- <h5 class="site-footer-title mb-3">Links</h5>
-
-                <ul class="site-footer-links">
-                    <li class="site-footer-link-item">
-                        <a href="https://www.facebook.com/profile.php?id=100089541734509" class="site-footer-link">Facebook</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a href="https://www.tiktok.com/@kalselunite" class="site-footer-link">Tiktok</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a href="https://www.instagram.com/kalsel.unite/" class="site-footer-link">Instagram</a>
-                    </li>
-                </ul> -->
             </div>
 
             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
