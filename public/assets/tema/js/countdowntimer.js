@@ -10,7 +10,7 @@
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
-        birthday = "01/1/2023";
+        birthday = "03/3/2023";
 
     today = mm + "/" + dd + "/" + yyyy;
 
@@ -23,18 +23,17 @@
                 distance = countDown - now;
 
             //do something later when date is reached
-            if (distance < 0) {
-                document.getElementById("days").innerText = "00",
-                    document.getElementById("hours").innerText = "00",
-                    document.getElementById("minutes").innerText = "00",
-                    document.getElementById("seconds").innerText = "00";
-                clearInterval(x);
-            }
+
             //seconds
             document.getElementById("days").innerText = Math.floor(distance / (day)),
                 document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
+                if (distance < 0) {
+                    document.getElementById("days").innerText = "00",
+                        document.getElementById("hours").innerText = "00",
+                        document.getElementById("minutes").innerText = "00";
+                    clearInterval(x);
+                }
         }, 0)
 }());
 
