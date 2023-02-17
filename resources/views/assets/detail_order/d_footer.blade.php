@@ -42,7 +42,8 @@
 
                 <ul class="site-footer-links">
                     <li class="site-footer-link-item">
-                        <a href="https://www.facebook.com/profile.php?id=100089541734509" class="site-footer-link">Facebook</a>
+                        <a href="https://www.facebook.com/profile.php?id=100089541734509"
+                            class="site-footer-link">Facebook</a>
                     </li>
 
                     <li class="site-footer-link-item">
@@ -77,7 +78,8 @@
                 <p class="text-white d-flex mt-3 mb-2">
                     Banjarbaru, South Borneo</p>
 
-                <a class="link-fx-1 color-contrast-higher mt-3" href="https://www.google.com/maps/place/Lapangan+Murjani/@-3.440697,114.8308698,15z/data=!4m2!3m1!1s0x0:0x39e8a18c6ab03325?sa=X&ved=2ahUKEwj04OPN0oD9AhXpiGMGHRLKCzkQ_BJ6BQiCARAH">
+                <a class="link-fx-1 color-contrast-higher mt-3"
+                    href="https://www.google.com/maps/place/Lapangan+Murjani/@-3.440697,114.8308698,15z/data=!4m2!3m1!1s0x0:0x39e8a18c6ab03325?sa=X&ved=2ahUKEwj04OPN0oD9AhXpiGMGHRLKCzkQ_BJ6BQiCARAH">
                     <span>Our Maps</span>
                     <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
@@ -106,7 +108,8 @@
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="https://www.termsfeed.com/live/fd4ec0c4-9a85-4696-b217-5d61b7104847" class="site-footer-link">Privacy Policy</a>
+                            <a href="https://www.termsfeed.com/live/fd4ec0c4-9a85-4696-b217-5d61b7104847"
+                                class="site-footer-link">Privacy Policy</a>
                         </li>
 
                     </ul>
@@ -117,13 +120,49 @@
 </footer>
 
 <!-- JAVASCRIPT FILES -->
-<script src="{{asset('assets/tema')}}/js/jquery.min.js"></script>
-<script src="{{asset('assets/tema')}}/js/popper.min.js"></script>
-<script src="{{asset('assets/tema')}}/js/bootstrap.min.js"></script>
-<script src="{{asset('assets/tema')}}/js/jquery.sticky.js"></script>
-<script src="{{asset('assets/tema')}}/js/click-scroll.js?07022023.001"></script>
-<script src="{{asset('assets/tema')}}/js/custom.js"></script>
+<script src="{{ asset('assets/tema') }}/js/jquery.min.js"></script>
+<script src="{{ asset('assets/tema') }}/js/popper.min.js"></script>
+<script src="{{ asset('assets/tema') }}/js/bootstrap.min.js"></script>
+<script src="{{ asset('assets/tema') }}/js/jquery.sticky.js"></script>
+<script src="{{ asset('assets/tema') }}/js/click-scroll.js?07022023.001"></script>
+<script src="{{ asset('assets/tema') }}/js/custom.js"></script>
+<script type="text/javascript">
+    // For example trigger on button clicked, or any time you need
+    var payButton = document.getElementById('pay-button');
+    payButton.addEventListener('click', function() {
+        // Trigger snap popup. @TODO: Replace TRANSACTION_TOKEN_HERE with your transaction token
 
+        window.snap.pay('{{ $token }}', {
+            onSuccess: function(result) {
+                /* You may add your own implementation here */
+                alert("payment success!");
+                console.log(result);
+                send_responee_to_form(result);
+            },
+            onPending: function(result) {
+                /* You may add your own implementation here */
+                alert("wating your payment!");
+                console.log(result);
+                send_responee_to_form(result);
+            },
+            onError: function(result) {
+                /* You may add your own implementation here */
+                alert("payment failed!");
+                console.log(result);
+                send_responee_to_form(result);
+            },
+            onClose: function() {
+                /* You may add your own implementation here */
+                alert('you closed the popup without finishing the payment');
+            }
+        })
+    });
+
+    function send_responee_to_form(result) {
+        document.getElementById('json_callback').value = JSON.stringify(result);
+        $('#submit_form').submit();
+    }
+</script>
 </body>
 
 </html>

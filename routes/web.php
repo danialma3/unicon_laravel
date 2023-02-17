@@ -26,6 +26,7 @@ Route::get('/comingsoon', [App\Http\Controllers\ComingsoonController::class, 'co
 Route::get('/tiket', [App\Http\Controllers\TiketController::class, 'tiket'])->name('tiket');
 Route::post('/tiket', [App\Http\Controllers\OrderController::class, 'store'])->name('tiket');
 Route::get('/detail-order/{order}', [App\Http\Controllers\OrderController::class, 'show'])->name('detail-order');
+Route::post('/detail-order/{order}', [App\Http\Controllers\OrderController::class, 'payment']);
 
 Auth::routes();
 

@@ -114,6 +114,7 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Midtrans\\' => 9,
         ),
         'L' => 
         array (
@@ -365,6 +366,10 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Midtrans\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans',
+        ),
         'League\\MimeTypeDetection\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
@@ -532,6 +537,7 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\LandingController' => __DIR__ . '/../..' . '/app/Http/Controllers/LandingController.php',
         'App\\Http\\Controllers\\ManajemenController' => __DIR__ . '/../..' . '/app/Http/Controllers/ManajemenController.php',
+        'App\\Http\\Controllers\\OrderController' => __DIR__ . '/../..' . '/app/Http/Controllers/OrderController.php',
         'App\\Http\\Controllers\\TiketController' => __DIR__ . '/../..' . '/app/Http/Controllers/TiketController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -542,6 +548,7 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Order' => __DIR__ . '/../..' . '/app/Models/Order.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -3107,6 +3114,14 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
         'League\\MimeTypeDetection\\OverridingExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php',
+        'Midtrans\\ApiRequestor' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/ApiRequestor.php',
+        'Midtrans\\Config' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/Config.php',
+        'Midtrans\\CoreApi' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/CoreApi.php',
+        'Midtrans\\Notification' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/Notification.php',
+        'Midtrans\\Sanitizer' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/Sanitizer.php',
+        'Midtrans\\Snap' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/Snap.php',
+        'Midtrans\\SnapApiRequestor' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php',
+        'Midtrans\\Transaction' => __DIR__ . '/..' . '/midtrans/midtrans-php/Midtrans/Transaction.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegrationAssertPostConditions' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationAssertPostConditions.php',

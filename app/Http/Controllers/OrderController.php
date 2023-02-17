@@ -46,8 +46,8 @@ class OrderController extends Controller
             "alamat" => "required",
             "qty" => "required",
         ]);
-
         $result = Order::create([
+
             "nama_awal" => $request->nama_awal,
             "nama_belakang" => $request->nama_belakang,
             "tmpt_lahir" => $request->tmpt_lahir,
@@ -58,8 +58,8 @@ class OrderController extends Controller
             "status" => NULL,
             "transaction_id" => NULL,
             "order_id" => NULL,
-            "qty" => NULL,
-            "gross_amount" => NULL,
+            "qty" => $request->qty,
+            "gross_amount" => $request->qty * 30000,
             "payment_type" => NULL,
             "payment_code" => NULL,
             "pdf_url" => NULL,
@@ -76,7 +76,52 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        return view("assets.detail_order.form_tiket", compact("order"));
+        // Set your Merchant Server Key
+        \Midtrans\Config::$serverKey = env('MIDTRANS_SERVER_KEY');
+        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
+        \Midtrans\Config::$isProduction = false;
+        // Set sanitization on (default)
+        \Midtrans\Config::$isSanitized = true;
+        // Set 3DS transaction for credit card to true
+        \Midtrans\Config::$is3ds = true;
+
+
+        $params = array(
+            'transaction_details' => array(
+                'order_id' => rand(),
+                'gross_amount' => 10000,
+            ),
+            'item_details' => array(
+                [
+                    'id' => 'b02',
+                    'price' => 30000,
+                    'quantity' => $order->qty,
+                    'name' => 'Tiket Reguler'
+                ]
+            ),
+            'customer_details' => array(
+                'first_name' => $order->nama_awal,
+                'last_name' => $order->nama_belakang,
+                'email' => $order->email,
+                'phone' => $order->nomor_hp,
+            ),
+        );
+
+        $token = \Midtrans\Snap::getSnapToken($params);
+        return view("assets.detail_order.form_tiket", compact("order", 'token'));
+    }
+    public function payment(Request $request, $id)
+    {
+        $json = json_decode($request->get('json'));
+        $update = Order::find($id);;
+        $update->status = $json->transaction_status ? $json->transaction_status : NULL;
+        $update->transaction_id = $json->transaction_id ? $json->transaction_id : NULL;
+        $update->order_id = $json->order_id ? $json->order_id : NULL;
+        $update->payment_type = $json->payment_type ? $json->payment_type : NULL;
+        $update->payment_code = isset($json->payment_code) ? $json->payment_code : NULL;
+        $update->pdf_url = isset($json->pdf_url) ? $json->pdf_url : NULL;
+        $update->save();
+        return redirect('/detail-order/' . $update->id);
     }
 
     /**
