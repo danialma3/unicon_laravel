@@ -447,7 +447,7 @@ strong {
 .text-by {
   margin: auto !important;
   padding-right: 14px !important;
-  font-family: sans-serif ;
+  font-family: sans-serif;
   font-size: 13px !important;
 }
 
@@ -626,6 +626,18 @@ strong {
   padding: 35px;
 }
 
+/*---------------------------------------
+  MAIN               
+-----------------------------------------*/
+/* .main-section {
+  background-image: url('/assets/tema/images/template/top_main.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: max-content;
+} */
+
+
 
 /*---------------------------------------
   TICKET               
@@ -636,7 +648,6 @@ strong {
   background-size: cover;
   position: relative;
   padding-top: 130px;
-
 }
 
 .ticket-form {
@@ -665,6 +676,44 @@ strong {
   height: 100%;
 }
 
+#countdown ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+#countdown ul li {
+  display: inline-block;
+  font-size: .9em;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+#countdown ul li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+
+  #countdown ul li {
+    font-size: calc(1.125rem * .75);
+  }
+
+  #countdown ul li span {
+    font-size: calc(3.375rem * .75);
+  }
+}
 
 /*---------------------------------------
   ARTISTS              
@@ -722,6 +771,21 @@ strong {
   margin: 1.5rem 0;
 }
 
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 100vw solid #4b2f96;
+  border-bottom: 27vw solid transparent;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-bottom: 0px solid transparent;
+  border-right: 100vw solid #4b2f96;
+  border-top: 16vw solid transparent;
+}
 
 /*---------------------------------------
   SCHEDULE              
@@ -806,63 +870,24 @@ strong {
 
 
 /*---------------------------------------
-  PRICING              
+  EVENT HUB              
 -----------------------------------------*/
-.pricing-thumb {
-  border: 5px dotted var(--dark-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  padding: 50px;
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right: 40px solid white;
 }
 
-.pricing-thumb h3 small {
-  display: inline-block;
-  font-size: var(--p-font-size);
-  margin-right: 15px;
-}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
 
-.pricing-list {
-  column-count: 2;
-  padding-left: 20px;
+  border-left: 40px solid white;
 }
-
-.pricing-list-item {
-  line-height: normal;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.pricing-tag {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px;
-}
-
-.pricing-tag span {
-  font-size: 180%;
-  line-height: normal;
-}
-
-.pricing-thumb .link-fx-1 {
-  color: var(--primary-color);
-}
-
-.pricing-thumb .link-fx-1:hover {
-  color: var(--link-hover-color);
-}
-
 
 /*---------------------------------------
   CONTACT               
@@ -905,10 +930,11 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: #424083;
+  background-color: black;
   position: relative;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .site-footer-top {
@@ -947,6 +973,13 @@ strong {
 .copyright-text {
   font-size: var(--copyright-font-size);
 }
+
+.blank-black {
+  background-color: #000000;
+  height: 20px;
+}
+
+
 
 
 /*---------------------------------------

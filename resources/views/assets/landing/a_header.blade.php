@@ -22,6 +22,9 @@
     <link href="{{asset('assets/tema')}}/css/templatemo-festava-live.css?07022023.001" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/images/unicontab.png" rel="shortcut icon">
 
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
 </head>
 
 <body>
