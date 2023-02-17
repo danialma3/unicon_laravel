@@ -8,7 +8,7 @@ https://templatemo.com/tm-583-festava-live
 
 
 /*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
+  CUSTOM PROPERTIES ( VARIABLES )
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
@@ -50,7 +50,7 @@ body {
 
 
 /*---------------------------------------
-  TYPOGRAPHY               
+  TYPOGRAPHY
 -----------------------------------------*/
 
 h2,
@@ -267,7 +267,7 @@ strong {
 
 
 /*---------------------------------------
-  SECTION               
+  SECTION
 -----------------------------------------*/
 .section-padding {
   padding-top: 100px;
@@ -339,7 +339,7 @@ strong {
 
 
 /*---------------------------------------
-  CUSTOM ICON COLOR               
+  CUSTOM ICON COLOR
 -----------------------------------------*/
 .custom-icon {
   color: var(--secondary-color);
@@ -347,7 +347,7 @@ strong {
 
 
 /*---------------------------------------
-  CUSTOM BUTTON               
+  CUSTOM BUTTON
 -----------------------------------------*/
 .custom-btn {
   background: var(--custom-btn-bg-color);
@@ -387,7 +387,7 @@ strong {
 
 
 /*---------------------------------------
-  VIDEO              
+  VIDEO
 -----------------------------------------*/
 .img-wrap {
   z-index: -100;
@@ -415,7 +415,7 @@ strong {
 
 
 /*---------------------------------------
-  SITE HEADER              
+  SITE HEADER
 -----------------------------------------*/
 .site-header {
   background-color: var(--primary-color);
@@ -425,7 +425,7 @@ strong {
 
 
 /*---------------------------------------
-  NAVIGATION              
+  NAVIGATION
 -----------------------------------------*/
 .sticky-wrapper {
   position: absolute;
@@ -551,7 +551,7 @@ strong {
 
 
 /*---------------------------------------
-  HERO        
+  HERO
 -----------------------------------------*/
 .hero-section {
   position: relative;
@@ -583,7 +583,7 @@ strong {
 
 
 /*---------------------------------------
-  ABOUT              
+  ABOUT
 -----------------------------------------*/
 .about-section {
   /* background-image: url('../images/edward-unsplash-blur.jpg'); */
@@ -627,7 +627,7 @@ strong {
 }
 
 /*---------------------------------------
-  MAIN               
+  MAIN
 -----------------------------------------*/
 /* .main-section {
   background-image: url('/assets/tema/images/template/top_main.png') !important;
@@ -640,7 +640,7 @@ strong {
 
 
 /*---------------------------------------
-  TICKET               
+  TICKET
 -----------------------------------------*/
 .ticket-section {
   background-image: url('/assets/tema/images/about-community-blur.jpg') !important;
@@ -716,8 +716,12 @@ strong {
 }
 
 /*---------------------------------------
-  ARTISTS              
+  ARTISTS
 -----------------------------------------*/
+.artists-section{
+    background-image: linear-gradient(180deg, #452987, #4b2f96);
+}
+
 .artists-thumb {
   position: relative;
   overflow: hidden;
@@ -788,7 +792,7 @@ strong {
 }
 
 /*---------------------------------------
-  SCHEDULE              
+  SCHEDULE
 -----------------------------------------*/
 .schedule-section {
   /* background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg'); */
@@ -870,7 +874,7 @@ strong {
 
 
 /*---------------------------------------
-  EVENT HUB              
+  EVENT HUB
 -----------------------------------------*/
 .arrow-left {
   width: 0;
@@ -890,7 +894,7 @@ strong {
 }
 
 /*---------------------------------------
-  CONTACT               
+  CONTACT
 -----------------------------------------*/
 .google-map {
   border-radius: var(--border-radius-medium);
@@ -898,7 +902,7 @@ strong {
 
 
 /*---------------------------------------
-  CUSTOM FORM               
+  CUSTOM FORM
 -----------------------------------------*/
 .custom-form .form-control {
   color: var(--p-color);
@@ -927,7 +931,7 @@ strong {
 
 
 /*---------------------------------------
-  SITE FOOTER              
+  SITE FOOTER
 -----------------------------------------*/
 .site-footer {
   background-color: black;
@@ -983,7 +987,7 @@ strong {
 
 
 /*---------------------------------------
-  SOCIAL ICON               
+  SOCIAL ICON
 -----------------------------------------*/
 .social-icon {
   margin: 0;
@@ -1035,7 +1039,7 @@ strong {
 
 
 /*---------------------------------------
-  RESPONSIVE STYLES               
+  RESPONSIVE STYLES
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
   .logo-kalsel-unite {
