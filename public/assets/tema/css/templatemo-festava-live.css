@@ -759,12 +759,14 @@ strong {
   display: inline-block;
   font-size: .9em;
   list-style-type: none;
-  text-transform: uppercase;
 }
 
 #countdown ul li span {
   display: block;
-  font-size: 2.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
 }
 
 .emoji {
@@ -775,6 +777,28 @@ strong {
 .emoji span {
   font-size: 4rem;
   padding: 0 .5rem;
+}
+
+#days,
+#hours,
+#minutes,
+#petik {
+  font-size: 50px !important;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+
+  /* display: inline-block; */
+  transform: scale(.9, 1.3);
+  /* W1C */
+  -webkit-transform: scale(.9, 1.3);
+  /* Safari and Chrome */
+  -moz-transform: scale(.9, 1.3);
+  /* Firefox */
+  -ms-transform: scale(.9, 1.3);
+  /* IE 9 */
+  -o-transform: scale(.9, 1.3);
+  /* Opera */
 }
 
 
@@ -790,7 +814,6 @@ strong {
 .guest-description {
   width: 200px;
   margin: 0 10px;
-
 }
 
 .guest-description img:nth-child(1) {
@@ -1034,7 +1057,12 @@ strong {
   background-color: #4b2f96;
 }
 
-
+.blank-bg {
+  display: none;
+  width: 100%;
+  height: 70px;
+  background-color: #4b2f96;
+}
 
 
 
@@ -1244,7 +1272,7 @@ strong {
     background-image: linear-gradient(180deg, #433388, #4b2f96);
   }
 
-  
+
 
 }
 
@@ -1442,15 +1470,6 @@ strong {
 }
 
 @media all and (max-width: 770px) {
-
-  #countdown ul li {
-    font-size: calc(1.125rem * .75);
-  }
-
-  #countdown ul li span {
-    font-size: calc(3.375rem * .75);
-  }
-
   .blank-space {
     height: 600px;
   }
@@ -1465,6 +1484,10 @@ strong {
     right: -150px;
     rotate: 30deg;
     transform: translate(-50%, -50%);
+  }
+
+  .artist3 {
+    margin-top: 20px;
   }
 }
 
@@ -1481,6 +1504,7 @@ strong {
     padding: auto;
     margin: auto;
   }
+
 
 }
 
@@ -1532,6 +1556,19 @@ strong {
   }
 }
 
+@media screen and (max-width: 630px) {
+  .star-icon {
+    position: absolute;
+    height: 120px;
+    top: 0;
+    right: 0;
+    top: -60px;
+    right: 50px;
+    rotate: -20deg;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media screen and (max-width: 580px) {
 
   .event_highlight {
@@ -1543,6 +1580,10 @@ strong {
     max-height: 400px;
     width: 100vw;
     height: 65vw;
+  }
+
+  .blank-bg {
+    display: block;
   }
 }
 
@@ -1635,6 +1676,9 @@ strong {
 
 
 @media screen and (max-width: 480px) {
+  .artist2 {
+    margin-left: 20px !important;
+  }
 
   .custom-img2 {
     position: absolute;
@@ -1649,6 +1693,8 @@ strong {
   .text-description .text-center {
     font-size: smaller;
   }
+
+
 
   h1 {
     font-size: 52px;
@@ -1670,7 +1716,7 @@ strong {
   .carousel-control-prev {
     left: -10px
   }
-  
+
   .carousel-control-next {
     right: -10px;
   }
@@ -1759,15 +1805,43 @@ strong {
 @media all and (max-width: 463px) {
   .star-icon {
     position: absolute;
-    height: 100px;
+    height: 120px;
     top: 0;
     right: 0;
-    top: -40px;
-    right: 120px;
+    top: -80px;
+    right: 40px;
     rotate: -20deg;
     transform: translate(-50%, -50%);
   }
 }
+
+@media all and (max-width: 443px) {
+  .artist1 {
+    margin-right: 50px !important;
+  }
+
+  .artist2 {
+    margin-left: 20px !important;
+  }
+
+  .artist3 {
+    margin-right: 50px !important;
+  }
+
+
+  .star-icon {
+    position: absolute;
+    height: 120px;
+    top: 0;
+    right: 0;
+    top: -60px;
+    right: 80px;
+    rotate: -20deg;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
 
 @media screen and (max-width: 390px) {
 
