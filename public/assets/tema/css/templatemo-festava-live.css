@@ -441,14 +441,13 @@ strong {
 
 .star-icon {
   position: absolute;
-  height: 50%;
+  height: 170px;
   top: 0;
   right: 0;
   top: -60px;
   right: 40px;
   rotate: -20deg;
   transform: translate(-50%, -50%);
-  background-color: white;
 }
 
 
@@ -901,6 +900,27 @@ strong {
 .sneakpeak-section .container {
   width: fit-content !important;
 }
+
+.sneak-peak-image img:nth-child(1) {
+  z-index: 3;
+}
+
+.sneak-peak-image img:nth-child(2) {
+  background-color: transparent;
+  z-index: 5;
+}
+
+.tanda-tanya-icon {
+  position: absolute;
+  height: 170px;
+  top: 0;
+  right: 0;
+  top: -30px;
+  right: -200px;
+  rotate: 7deg;
+  transform: translate(-50%, -50%);
+}
+
 
 
 .schedule-section {
