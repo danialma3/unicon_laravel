@@ -8,17 +8,17 @@
             </div>
             <div class="col">
                 <div class="card bg-transparent border-0">
-                    <div class="card-body bg-transparent">
-                        <h2 class="text-white" style="line-height:0.8;">Ticket <br>Presales</h2>
-                        <p class="text-white" style="margin:0">opening in</p>
-                        <div id="countdown">
-                            <ul>
-                                <li><span id="days"></span></li>
-                                <li><span>  Days  </span></li>
-                                <li><span id="hours"></span></li>
-                                <li><span id="petik">:</span></li>
-                                <li><span id="minutes"></span></li>
-                            </ul>
+                    <div class="card-body bg-transparent countdown-container">
+                        <h2 class="text-white" >Ticket <br>Presales</h2>
+                        <p class="text-white" >opening in</p>
+                        <div id="countdown" style="width: fit-content;">
+                            <div class=" d-flex align-items-end">
+                                <p class="days"><span id="days"></span></p>
+                                <p class="text-days">  Days  </p>
+                                <p class="hours"><span id="hours"></span></p>
+                                <p class="petik"><span id="petik">:</span></p>
+                                <p class="minutes"><span id="minutes"></span></p>
+                            </div>
                         </div>
                         <a class="btn btn-dark fst-italic rounded-0" href="/tiket" role="button">Beli Sekarang</a>
                     </div>
