@@ -5,6 +5,8 @@
         <div class="d-flex justify-content-center flex-wrap">
             <div class="card border-0 guest-description">
                 <img src="{{ asset('assets/tema') }}/images/artists/GS-AUDI-MAGUS.png" type="png" poster="">
+                <img class="star-icon" src="{{asset('assets/tema')}}/images/template/star-icon.png" type="png" poster="">
+
                 <div class="card-body">
                     <p class="text-white">Sing Performance
                     </p>

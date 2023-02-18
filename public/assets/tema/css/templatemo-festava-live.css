@@ -428,6 +428,29 @@ strong {
   transform: translate(-50%, -50%);
 }
 
+.tanggal27-28 {
+  position: absolute;
+  /* height: 50%; */
+  top: 0;
+  right: 0;
+  top: 80%;
+  right: -100px;
+  rotate: 20deg;
+  transform: translate(-50%, -50%);
+}
+
+.star-icon {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  right: 0;
+  top: -60px;
+  right: 40px;
+  rotate: -20deg;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
 
 /*---------------------------------------
   SITE HEADER
@@ -770,8 +793,14 @@ strong {
 
 }
 
-.guest-description img {
+.guest-description img:nth-child(1) {
   background-color: #340996;
+  z-index: 4;
+}
+
+.guest-description img:nth-child(2) {
+  background-color: transparent;
+  z-index: 3;
 }
 
 .guest-description .card-body {

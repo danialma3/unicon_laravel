@@ -1,4 +1,4 @@
-<section class="hero-section" id="section_1" >
+<section class="hero-section" id="section_1">
     <div class="section-overlay"></div>
 
     <div class="container d-flex justify-content-center align-items-center">
@@ -40,13 +40,15 @@
                 <p class="text-white me-3 text-center ">Unite Convention Kalimantan Selatan adalah platform untuk
                     bersosialisasi bersama komunitas dan menikmati ragam kultur pop
                     dengan menciptakan pengalaman menarik, unik dan tak terlupakan.</p>
+                <img class="tanggal27-28" src="{{asset('assets/tema')}}/images/template/tanggal27-28.png" type="png" poster="">
+
             </div>
         </div>
     </div>
     </div>
 
     <div class="img-wrap">
-        <img src="{{asset('assets/tema')}}/images/background.png?07022023.001" type="png" class="custom-img" poster="">
-        <img src="{{asset('assets/tema')}}/images/charasset1.png?07022023.001" type="png" class="custom-img2" poster="">
+        <img class="custom-img" src="{{asset('assets/tema')}}/images/background.png?07022023.001" type="png" poster="">
+        <img class="custom-img2" src="{{asset('assets/tema')}}/images/charasset1.png?07022023.001" type="png" poster="">
     </div>
 </section>
