@@ -901,11 +901,22 @@ strong {
   width: fit-content !important;
 }
 
+.sneak-peak-image {
+  background-color: transparent;
+
+}
+
 .sneak-peak-image img:nth-child(1) {
+  background-color: transparent;
   z-index: 3;
 }
 
 .sneak-peak-image img:nth-child(2) {
+  background-color: transparent;
+  z-index: 5;
+}
+
+.sneak-peak-image img:nth-child(3) {
   background-color: transparent;
   z-index: 5;
 }
@@ -921,7 +932,16 @@ strong {
   transform: translate(-50%, -50%);
 }
 
-
+.mushroom-icon {
+  position: absolute;
+  height: 170px;
+  bottom: 0;
+  left: 0;
+  bottom: -220px;
+  left: -140px;
+  rotate: -5deg;
+  transform: translate(-50%, -50%);
+}
 
 .schedule-section {
   /* background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg'); */
@@ -1012,6 +1032,9 @@ strong {
 .eventhub-section {
   background-color: #4b2f96;
 }
+
+
+
 
 
 .arrow-left {
@@ -1211,9 +1234,15 @@ strong {
 
 }
 
-@media screen and (min-width: 992px) {
 
+
+@media all and (max-width: 1130px) {
+  .mushroom-icon {
+    bottom: -200px;
+    left: -80px;
+  }
 }
+
 
 @media screen and (max-width: 991px) {
   .blank-div-hero {
@@ -1315,7 +1344,14 @@ strong {
   }
 }
 
-
+@media screen and (max-width: 930px) {
+  .tanda-tanya-icon {
+    position: absolute;
+    height: 120px;
+    top: -20px;
+    right: -100px;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .custom-btn {
@@ -1334,11 +1370,13 @@ strong {
 }
 
 
-
 @media screen and (max-width: 780px) {
   .event_highlight {
     height: auto;
-    width: 100%;
+    width: 90%;
+    padding: auto;
+    margin: auto;
+    background-color: transparent;
   }
 
   .triangle-left {
@@ -1362,6 +1400,19 @@ strong {
 
   .blank-space {
     height: 600px;
+  }
+
+  .tanda-tanya-icon {
+    position: absolute;
+    height: 120px;
+    top: -20px;
+    right: -70px;
+  }
+
+  .mushroom-icon {
+    height: 120px;
+    bottom: -200px;
+    left: 00px;
   }
 }
 
@@ -1391,6 +1442,7 @@ strong {
     padding: auto;
     margin: auto;
   }
+
 }
 
 @media screen and (max-width: 735px) {
