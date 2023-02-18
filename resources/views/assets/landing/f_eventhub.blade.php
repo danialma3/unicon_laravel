@@ -3,6 +3,7 @@
 
 <div class="blank-space"></div>
 <div class="triangle-right"></div>
+<div class="blank-bg"></div>
 
 <section class="eventhub-section " id="section_4">
     <div class="container text-center">
