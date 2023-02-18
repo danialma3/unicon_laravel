@@ -366,6 +366,10 @@ strong {
   clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%);
 }
 
+.button-beli {
+  border: none;
+}
+
 .custom-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
@@ -419,7 +423,7 @@ strong {
   height: 50%;
   top: 0;
   left: 0;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -567,8 +571,13 @@ strong {
 .hero-section {
   position: relative;
   overflow: hidden;
-  padding-top: 240px;
+  margin-top: 0px;
   height: calc(100vh - 51px);
+  height: fit-content !important;
+}
+
+.blank-div-hero {
+  height: 200px;
 }
 
 @media all and (min-width: 770px) {
@@ -670,6 +679,28 @@ strong {
   padding-top: 130px;
 }
 
+.ticketinfo-section {
+  background-color: #4b2f96;
+  padding: 30px 0 60px 0 !important;
+}
+
+.ticketinfo-section .container {
+  width: 100vw;
+}
+
+.ticketinfo-section .container .row {
+  width: 65vw;
+  margin: auto
+}
+
+.carousel-control-prev {
+  left: -20px
+}
+
+.carousel-control-next {
+  right: -20px;
+}
+
 .ticket-form {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
@@ -733,6 +764,27 @@ strong {
   background-image: linear-gradient(180deg, #452987, #4b2f96);
 }
 
+.guest-description {
+  width: 200px;
+  margin: 0 10px;
+
+}
+
+.guest-description img {
+  background-color: #340996;
+}
+
+.guest-description .card-body {
+  background-color: #4b2f96;
+  ;
+}
+
+.guest-description .card-body p {
+  margin: 0;
+  padding: 2px 0;
+  background-color: #51a09d;
+}
+
 .artists-thumb {
   position: relative;
   overflow: hidden;
@@ -787,10 +839,12 @@ strong {
 }
 
 .triangle-left {
+  position: absolute;
   width: 100%;
   padding-top: 27%;
   clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
   border: none;
+  background-color: #4b2f96;
 }
 
 .triangle-right {
@@ -805,6 +859,21 @@ strong {
 /*---------------------------------------
   SNEAK PEAK
 -----------------------------------------*/
+.sneakpeak-section-container {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.sneakpeak-section {
+  padding: 0 !important;
+}
+
+.sneakpeak-section .container {
+  width: fit-content !important;
+}
+
+
 .schedule-section {
   /* background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg'); */
   background-color: #424083;
@@ -888,7 +957,11 @@ strong {
   EVENT HUB
 -----------------------------------------*/
 .blank-space {
-  height: 780px;
+  height: 730px;
+}
+
+.eventhub-section {
+  background-color: #4b2f96;
 }
 
 
@@ -1089,7 +1162,14 @@ strong {
 
 }
 
+@media screen and (min-width: 992px) {
+
+}
+
 @media screen and (max-width: 991px) {
+  .blank-div-hero {
+    display: none;
+  }
 
   .section_4_navbar,
   .section_5_navbar {
@@ -1193,6 +1273,10 @@ strong {
     font-size: 14px;
     padding: 10px 20px;
   }
+
+  .ticketinfo-section .container {
+    width: 95vw !important;
+  }
 }
 
 .event_highlight {
@@ -1207,9 +1291,32 @@ strong {
     height: auto;
     width: 100%;
   }
+
+  .triangle-left {
+    display: none;
+  }
+
+  .triangle-left-2 {
+    width: 100%;
+    padding-top: 27%;
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+    border: none;
+    background-color: #4b2f96;
+  }
+
+  .blank-space-triangle {
+    background-color: #4b2f96;
+    width: 100%;
+    height: 50px;
+    z-index: -99;
+  }
+
+  .blank-space {
+    height: 600px;
+  }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 770px) {
 
   #countdown ul li {
     font-size: calc(1.125rem * .75);
@@ -1218,18 +1325,60 @@ strong {
   #countdown ul li span {
     font-size: calc(3.375rem * .75);
   }
-}
 
-@media screen and (max-width: 765px) {
   .blank-space {
     height: 600px;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 766px) {
+  .blank-space {
+    height: 370px;
+  }
 
+  .hand-band img {
+    width: 60%;
+    height: auto;
+    padding: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .blank-space {
+    height: 390px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .blank-space {
+    height: 410px;
+  }
+}
+
+@media screen and (max-width: 680px) {
   .custom-img2 {
     height: 40%;
+  }
+
+  .blank-space {
+    height: 420px;
+  }
+
+  .hand-band img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .blank-space {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blank-space {
+    height: 440px;
   }
 }
 
@@ -1239,10 +1388,29 @@ strong {
     width: 80vw;
     height: auto;
   }
+
+  .blank-space {
+    max-height: 400px;
+    width: 100vw;
+    height: 65vw;
+  }
 }
 
 
 @media screen and (max-width: 556px) {
+  .arrow-left {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid white;
+  }
+
+  .arrow-right {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+    border-left: 30px solid white;
+  }
+
   h1:nth-child(1) {
     font-size: 65px;
 

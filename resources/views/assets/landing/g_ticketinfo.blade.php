@@ -1,9 +1,9 @@
-<section class="ticketinfo-section border-0" id="section_5" style="background-color: #4b2f96; padding: 30px 0 60px 0">
-    <div class="container" style="width: 65vw;">
+<section class="ticketinfo-section border-0" id="section_5"  >
+    <div class="container" >
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card bg-transparent border-0">
-                    <img class="card-img-top" src="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" type="png" poster="">
+                <div class="card bg-transparent border-0 hand-band" >
+                    <img src="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" type="png" poster="">
                 </div>
             </div>
             <div class="col">

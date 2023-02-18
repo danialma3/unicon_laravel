@@ -1,9 +1,9 @@
-<section class="hero-section" id="section_1">
+<section class="hero-section" id="section_1" >
     <div class="section-overlay"></div>
 
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
-
+            <div class="blank-div-hero"></div>
             <div class="col-12 mt-auto text-center">
                 <h1 class="text-white">EXPERIENCE</h1>
                 <h1>POP CULTURE</h1>

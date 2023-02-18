@@ -13,7 +13,7 @@
                 </a>
             </div>
 
-            <a href="/tiket" class="btn custom-btn d-lg-none ms-auto me-4" style="border: none;">Beli Ticket!</a>
+            <a href="/tiket" class="btn custom-btn d-lg-none ms-auto me-4 button-beli">Beli Ticket!</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@
 
                 </ul>
 
-                <a href="/tiket" class="btn custom-btn d-lg-block d-none" style="border: none;">Beli Tiket!</a>
+                <a href="/tiket" class="btn custom-btn d-lg-block d-none button-beli">Beli Tiket!</a>
             </div>
         </div>
     </nav>
