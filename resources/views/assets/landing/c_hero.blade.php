@@ -10,7 +10,7 @@
                 <h2>LIKE NEVER BEFORE</h2>
             </div>
 
-            <div class="social-share">
+            <!-- <div class="social-share">
                 <ul class="social-icon d-flex align-items-center justify-content-center">
                     <span class="text-white me-3">Our Social Media:</span>
 
@@ -32,6 +32,14 @@
                         </a>
                     </li>
                 </ul>
+            </div> -->
+
+            <p class="text-white me-3 text-center text-coming-soon">COMING ON MAY 2023</p>
+            <div class="text-description">
+
+                <p class="text-white me-3 text-center ">Unite Convention Kalimantan Selatan adalah platform untuk
+                    bersosialisasi bersama komunitas dan menikmati ragam kultur pop
+                    dengan menciptakan pengalaman menarik, unik dan tak terlupakan.</p>
             </div>
         </div>
     </div>
