@@ -1,15 +1,17 @@
 <main>
     <nav class="navbar navbar-expand-lg">
         <div class=" container">
-            <a class="navbar-brand logo-unicon" href="/tiket">
-                <img src="{{asset('assets/tema')}}/images/uniconweb.png?07022023.001" type="png" poster="">
-            </a>
+            <div class="d-flex flex-row">
+                <a class="navbar-brand logo-unicon" href="/tiket">
+                    <img src="{{asset('assets/tema')}}/images/uniconweb.png?07022023.001" type="png" poster="">
+                </a>
 
-            <p class="navbar-brand text-by">by</p>
+                <p class="navbar-brand text-by">by</p>
 
-            <a class="navbar-brand logo-kalsel-unite" href="/tiket">
-                <img src="{{asset('assets/tema')}}/images/kalselunite.png?07022023.001" type="png" poster="">
-            </a>
+                <a class="navbar-brand logo-kalsel-unite" href="/tiket">
+                    <img src="{{asset('assets/tema')}}/images/kalselunite.png?07022023.001" type="png" poster="">
+                </a>
+            </div>
 
             <a href="/tiket" class="btn custom-btn d-lg-none ms-auto me-4" style="border: none;">Beli Ticket!</a>
 

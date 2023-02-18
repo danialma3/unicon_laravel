@@ -1072,16 +1072,7 @@ strong {
   
 }
 
-
 @media screen and (max-width: 991px) {
-  .logo-kalsel-unite {
-    display: none !important;
-  }
-
-  .text-by {
-    display: none !important;
-  }
-
   .section_4_navbar, .section_5_navbar {
     display: block;
   } 
