@@ -1874,22 +1874,23 @@ strong {
 @media screen and (max-width: 390px) {
 
   .custom-img2 {
+    position: absolute;
     height: 30%;
+    top: 0;
+    left: 0;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  h1:nth-child(1) {
-    font-size: 48px;
-    padding-top: 30vw;
+  .text-title-hero {
+    padding-top: 60px;
   }
+}
 
-  h1:nth-child(2) {
-    font-size: 48px;
-    line-height: 100%;
-  }
-
-  h2:nth-child(3) {
-    line-height: 20px;
-    font-size: 28px;
+@media screen and (max-width: 373px) {
+  .text-title-hero h1:nth-child(2) {
+    font-size: 50px;
   }
 }
 
