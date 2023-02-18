@@ -1,4 +1,4 @@
-<section class="ticketinfo-section border-0" id="section_2" style="background-color: #4b2f96; padding: 30px 0">
+<section class="ticketinfo-section border-0" id="section_5" style="background-color: #4b2f96; padding: 30px 0 60px 0">
     <div class="container" style="width: 65vw;">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">

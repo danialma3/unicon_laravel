@@ -28,4 +28,4 @@
         </div>
     </div>
 </section>
-<div class="triangle-left" style="position: absolute;"></div>
+<section><div class="triangle-left" style="position: absolute; background-color: #4b2f96"></div></section>

@@ -13,7 +13,6 @@
 
     <title>UNICON KALSEL</title>
 
-    <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
@@ -21,10 +20,5 @@
     <link href="{{asset('assets/tema')}}/css/bootstrap-icons.css" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/css/templatemo-festava-live.css?07022023.001" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/images/unicontab.png" rel="shortcut icon">
-
-    <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-
 </head>
-
 <body>

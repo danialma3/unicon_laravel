@@ -1,6 +1,6 @@
 <div class="blank-black"></div>
 
-<section class="contact-section section-padding" id="section_6">
+<section class="sponsorship-section section-padding" id="section_6">
     <div class="container text-center">
         <div class="d-flex justify-content-evenly" style="padding-bottom: 40px;">
             <div>

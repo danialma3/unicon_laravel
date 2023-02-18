@@ -46,6 +46,10 @@ https://templatemo.com/tm-583-festava-live
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family);
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100vw;
 }
 
 
@@ -385,6 +389,14 @@ strong {
   color: var(--white-color);
 }
 
+.section_4_dropdown {
+  display: none;
+} 
+
+.section_5_dropdown {
+  display: none;
+} 
+
 
 /*---------------------------------------
   VIDEO
@@ -394,7 +406,6 @@ strong {
 }
 
 .custom-img {
-  padding-top: 83px;
   position: absolute;
   top: 0;
   left: 0;
@@ -428,11 +439,11 @@ strong {
   NAVIGATION
 -----------------------------------------*/
 .sticky-wrapper {
-  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   margin-top: 0px;
+  width: 100%;
 }
 
 .sticky-wrapper.is-sticky .navbar {
@@ -704,22 +715,13 @@ strong {
   padding: 0 .5rem;
 }
 
-@media all and (max-width: 768px) {
 
-  #countdown ul li {
-    font-size: calc(1.125rem * .75);
-  }
-
-  #countdown ul li span {
-    font-size: calc(3.375rem * .75);
-  }
-}
 
 /*---------------------------------------
   ARTISTS
 -----------------------------------------*/
-.artists-section{
-    background-image: linear-gradient(180deg, #452987, #4b2f96);
+.artists-section {
+  background-image: linear-gradient(180deg, #452987, #4b2f96);
 }
 
 .artists-thumb {
@@ -776,23 +778,23 @@ strong {
 }
 
 .triangle-left {
-  width: 0;
-  height: 0;
-  border-top: 0px solid transparent;
-  border-left: 100vw solid #4b2f96;
-  border-bottom: 27vw solid transparent;
+  width: 100%;
+  padding-top: 27%;
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+  border: none;
 }
 
 .triangle-right {
-  width: 0;
-  height: 0;
-  border-bottom: 0px solid transparent;
-  border-right: 100vw solid #4b2f96;
-  border-top: 16vw solid transparent;
+  width: 100%;
+  padding-top: 15%;
+  background-color: #4b2f96;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+  border: none;
+  z-index: -1;
 }
 
 /*---------------------------------------
-  SCHEDULE
+  SNEAK PEAK
 -----------------------------------------*/
 .schedule-section {
   /* background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg'); */
@@ -876,6 +878,11 @@ strong {
 /*---------------------------------------
   EVENT HUB
 -----------------------------------------*/
+.blank-space {
+  height: 780px;
+}
+
+
 .arrow-left {
   width: 0;
   height: 0;
@@ -1041,6 +1048,31 @@ strong {
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
+@media all and (max-width: 1300px) {
+  .section_5_navbar {
+    display: none;
+  } 
+
+  .section_5_dropdown {
+    display: block;
+  } 
+  
+}
+
+
+@media all and (max-width: 1200px) {
+
+  .section_4_navbar {
+    display: none;
+  } 
+
+  .section_4_dropdown {
+    display: block;
+  } 
+  
+}
+
+
 @media screen and (max-width: 991px) {
   .logo-kalsel-unite {
     display: none !important;
@@ -1049,6 +1081,16 @@ strong {
   .text-by {
     display: none !important;
   }
+
+  .section_4_navbar, .section_5_navbar {
+    display: block;
+  } 
+
+  .section_4_dropdown, .section_5_dropdown {
+    display: none;
+  } 
+  
+
 
   h1 {
     font-size: 62px;
@@ -1133,14 +1175,43 @@ strong {
   }
 }
 
-@media screen and (max-width: 767px) {
+
+
+@media screen and (max-width: 800px) {
   .custom-btn {
     font-size: 14px;
     padding: 10px 20px;
   }
+}
 
-  .img-wrap {
-    max-width: 100vw;
+.event_highlight {
+  width: 640px;
+  z-index: 10;
+}
+
+
+
+@media screen and (max-width: 780px) {
+  .event_highlight {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  #countdown ul li {
+    font-size: calc(1.125rem * .75);
+  }
+
+  #countdown ul li span {
+    font-size: calc(3.375rem * .75);
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .blank-space {
+    height: 600px;
   }
 }
 
@@ -1148,6 +1219,14 @@ strong {
 
   .custom-img2 {
     height: 40%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  .event_highlight {
+    width: 80vw;
+    height: auto;
   }
 }
 

@@ -1,7 +1,7 @@
-<div style="height:780px"></div>
+<div class="blank-space" ></div>
 <div class="triangle-right"></div>
 
-<section class="ticketinfo-section " id="section_2" style="background-color: #4b2f96;">
+<section class="ticketinfo-section " id="section_4" style="background-color: #4b2f96; ">
     <div class="container text-center" style="width: 65vw;">
         <h2 class="text-white">Events Hub</h2>
         <p class="text-white ">Road to Event Project You Might Love</p>
