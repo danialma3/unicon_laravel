@@ -20,5 +20,10 @@
     <link href="{{asset('assets/tema')}}/css/bootstrap-icons.css" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/css/templatemo-festava-live.css?07022023.001" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/images/unicontab.png" rel="shortcut icon">
+
+    <link rel="stylesheet" href="{{asset('assets/tema')}}/css/carousel.css">
 </head>
+
 <body>
+
+    <main>

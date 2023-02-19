@@ -15,9 +15,8 @@
 <script src="{{asset('assets/tema')}}/js/jquery.sticky.js"></script>
 <script src="{{asset('assets/tema')}}/js/click-scroll.js?07022023.001"></script>
 <script src="{{asset('assets/tema')}}/js/custom.js"></script>
-<script src="{{asset('assets/tema')}}/js/custom.js"></script>
+<script defer src="{{asset('assets/tema')}}/js/carousel.js"></script>
 <script src="{{asset('assets/tema')}}/js/countdowntimer.js"></script>
-
 </body>
 
 </html>
