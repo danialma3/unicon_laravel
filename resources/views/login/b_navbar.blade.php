@@ -2,11 +2,11 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class=" container">
-            <a class="navbar-brand logo-unicon" href="/tiket">
+            <div class="navbar-brand logo-unicon" href="/tiket">
                 <img src="{{asset('assets/tema')}}/images/uniconweb.png?07022023.001" type="png" poster="">
-            </a>
+            </div>
 
-            <a class="navbar-brand logo-kalsel-unite" href="/tiket">
+            <div class="navbar-brand" href="/tiket">
                 <img src="{{asset('assets/tema')}}/images/kalselunite.png?07022023.001" type="png" poster="">
-            </a>
+            </div>
     </nav>

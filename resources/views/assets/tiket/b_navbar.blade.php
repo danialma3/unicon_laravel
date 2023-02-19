@@ -3,15 +3,15 @@
     <nav class="navbar navbar-expand-lg">
         <div class=" container">
             <div class="d-flex flex-row">
-                <a class="navbar-brand logo-unicon" href="/tiket">
+                <div class="navbar-brand logo-unicon" href="/tiket">
                     <img src="{{asset('assets/tema')}}/images/uniconweb.png?07022023.001" type="png" poster="">
-                </a>
+                </div>
 
                 <p class="navbar-brand text-by">by</p>
 
-                <a class="navbar-brand logo-kalsel-unite" href="/tiket">
+                <div class="navbar-brand logo-kalsel-unite" href="/tiket">
                     <img src="{{asset('assets/tema')}}/images/kalselunite.png?07022023.001" type="png" poster="">
-                </a>
+                </div>
             </div>
 
             <a href="/" class="btn custom-btn d-lg-none ms-auto me-4 border-0">Kembali</a>
