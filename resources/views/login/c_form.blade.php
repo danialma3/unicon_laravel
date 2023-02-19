@@ -39,9 +39,8 @@
                         </div>
                     </div> -->
                     <!-- Form Group (login box)-->
-                    <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                        <!-- <a class="small" href="#">Lupa Password?</a> -->
-                        <button type="submit" id="login" name="login" class="btn btn-warning">Login</button>
+                    <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                        <button style="padding: 10px 40px;" type="submit" id="login" name="login" class="btn btn-warning">Login</button>
                     </div>
                 </form>
             </div>
