@@ -23,7 +23,7 @@
                     <li class="nav-item">
                     </li>
                 </ul>
-                <a href="/" class="btn custom-btn d-lg-block d-none">Kembali!</a>
+                <a href="/" class="btn custom-btn d-lg-block d-none border-0">Kembali!</a>
             </div>
         </div>
     </nav>
