@@ -773,21 +773,11 @@ strong {
 }
 
 .countdown-container h2 {
+  /* Strech scale harus sama dengan inline display block */
+
+  display: inline-block;
   line-height: 0.8;
 
-  /* display: inline-block; */
-  transform: scale(1.3, 1);
-  /* W1C */
-  -webkit-transform: scale(1.3, 1);
-  /* Safari and Chrome */
-  -moz-transform: scale(1.3, 1);
-  /* Firefox */
-  -ms-transform: scale(1.3, 1);
-  /* IE 9 */
-  -o-transform: scale(1.3, 1);
-  /* Opera */
-
-  padding-left: 40px;
 
 }
 
@@ -1306,14 +1296,10 @@ strong {
 }
 
 @media all and (min-width: 1170px) {
-
   .artists-section {
     background-image: linear-gradient(180deg, #433388, #4b2f96);
   }
-
-
 }
-
 
 
 @media all and (max-width: 1130px) {
@@ -1321,12 +1307,16 @@ strong {
     bottom: -200px;
     left: -80px;
   }
+
+  .blank-space {
+    height: 780px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   #carouselExampleControlsNoTouching {
     display: block;
-  } 
+  }
 }
 
 
@@ -1341,9 +1331,13 @@ strong {
     transform: translate(-50%, -50%);
   }
 
+  .eventhub-section {
+    padding-bottom: 50px;
+  }
+
   #carouselExampleControlsNoTouching {
     display: block;
-  } 
+  }
 
 
   .blank-div-hero {
@@ -1502,7 +1496,7 @@ strong {
   }
 
   .blank-space {
-    height: 600px;
+    height: 500px;
   }
 
   .tanda-tanya-icon {
@@ -1513,15 +1507,21 @@ strong {
   }
 
   .mushroom-icon {
-    height: 120px;
+    height: 100px;
     bottom: -200px;
-    left: 00px;
+    left: 0px;
   }
 }
 
-@media all and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .blank-space {
-    height: 600px;
+    height: 300px;
+  }
+
+  .mushroom-icon {
+    height: 100px;
+    bottom: -100px;
+    left: 0px;
   }
 }
 
@@ -1539,15 +1539,15 @@ strong {
   .artist3 {
     margin-top: 20px;
   }
+
+  .countdown-container {
+    margin: auto;
+  }
+
 }
 
 
-
 @media screen and (max-width: 766px) {
-  .blank-space {
-    height: 370px;
-  }
-
   .hand-band img {
     width: 60%;
     height: auto;
@@ -1555,18 +1555,24 @@ strong {
     margin: auto;
   }
 
+  
+}
 
+@media screen and (max-width: 763px) {
+  .blank-space {
+    height: 330px;
+  }
 }
 
 @media screen and (max-width: 735px) {
   .blank-space {
-    height: 390px;
+    height: 340px;
   }
 }
 
 @media screen and (max-width: 715px) {
   .blank-space {
-    height: 410px;
+    height: 350px;
   }
 }
 
@@ -1585,24 +1591,8 @@ strong {
     height: 40%;
   }
 
-  .blank-space {
-    height: 420px;
-  }
-
   .hand-band img {
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .blank-space {
-    height: 430px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .blank-space {
-    height: 440px;
   }
 }
 
@@ -1616,6 +1606,10 @@ strong {
     right: 50px;
     rotate: -20deg;
     transform: translate(-50%, -50%);
+  }
+
+  .blank-space {
+    height: 370px;
   }
 }
 
