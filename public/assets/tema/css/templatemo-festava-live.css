@@ -703,7 +703,7 @@ strong {
 
 .ticketinfo-section {
   background-color: #4b2f96;
-  padding: 30px 0 60px 0 !important;
+  padding: 60px 0 60px 0 !important;
 }
 
 .ticketinfo-section .container {
@@ -749,24 +749,40 @@ strong {
   height: 100%;
 }
 
-#countdown ul {
+#countdown div {
   padding: 0;
   margin: 0;
 }
 
 
-#countdown ul li {
+#countdown div div {
   display: inline-block;
   font-size: .9em;
   list-style-type: none;
 }
 
-#countdown ul li span {
-  display: block;
+.text-days {
+  /* display: inline-block; */
+  /* display: block; */
   font-size: 0.9rem;
   font-style: italic;
   font-weight: bold;
   color: white;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.countdown-container h2 {
+  /* Strech scale harus sama dengan inline display block */
+
+  display: inline-block;
+  line-height: 0.8;
+
+
+}
+
+.countdown-container p {
+  margin: 0;
 }
 
 .emoji {
@@ -779,10 +795,10 @@ strong {
   padding: 0 .5rem;
 }
 
-#days,
-#hours,
-#minutes,
-#petik {
+.days,
+.hours,
+.minutes,
+.petik {
   font-size: 50px !important;
   font-style: italic;
   font-weight: bold;
@@ -1083,6 +1099,10 @@ strong {
   border-left: 40px solid white;
 }
 
+#carouselExampleControlsNoTouching {
+  display: none;
+}
+
 /*---------------------------------------
   CONTACT
 -----------------------------------------*/
@@ -1217,6 +1237,37 @@ strong {
   animation: spinAround 2s linear infinite;
 }
 
+
+/*---------------------------------------
+  SPONSOR
+-----------------------------------------*/
+.title-sponsors {
+  font-size: 14px;
+  margin: 20px 0 0 0;
+}
+
+.padd-btm-40 {
+  padding-bottom: 40px;
+}
+
+.height-40 {
+  height: 40px;
+}
+
+.padd-btm-30 div {
+  padding-left: 30px;
+}
+
+.mrg-tp-20 {
+  margin: 20px 0 0 0;
+}
+
+.med-partner img {
+  height: 20px;
+  margin: 5px 10px;
+
+}
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg)
@@ -1226,6 +1277,15 @@ strong {
     transform: rotate(360deg);
   }
 }
+
+/*---------------------------------------
+  Slider
+-----------------------------------------*/
+
+/* adapted from  https://codepen.io/glebkema/pen/Xjryjd*/
+
+
+/* adapted from  https://codepen.io/glebkema/pen/Xjryjd*/
 
 
 /*---------------------------------------
@@ -1267,21 +1327,26 @@ strong {
 }
 
 @media all and (min-width: 1170px) {
-
   .artists-section {
     background-image: linear-gradient(180deg, #433388, #4b2f96);
   }
-
-
-
 }
-
 
 
 @media all and (max-width: 1130px) {
   .mushroom-icon {
     bottom: -200px;
     left: -80px;
+  }
+
+  .blank-space {
+    height: 780px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #carouselExampleControlsNoTouching {
+    display: block;
   }
 }
 
@@ -1295,6 +1360,14 @@ strong {
     right: -80px;
     rotate: 30deg;
     transform: translate(-50%, -50%);
+  }
+
+  .eventhub-section {
+    padding-bottom: 50px;
+  }
+
+  #carouselExampleControlsNoTouching {
+    display: block;
   }
 
 
@@ -1388,13 +1461,15 @@ strong {
     padding: 25px;
   }
 
-  .ticket-section {
-    padding-top: 130px;
+  .ticketinfo-section {
+    padding-top: 0px !important;
   }
 
   .ticket-form {
     padding: 30px;
   }
+
+
 }
 
 @media screen and (max-width: 930px) {
@@ -1452,7 +1527,7 @@ strong {
   }
 
   .blank-space {
-    height: 600px;
+    height: 500px;
   }
 
   .tanda-tanya-icon {
@@ -1463,15 +1538,21 @@ strong {
   }
 
   .mushroom-icon {
-    height: 120px;
+    height: 100px;
     bottom: -200px;
-    left: 00px;
+    left: 0px;
   }
 }
 
-@media all and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .blank-space {
-    height: 600px;
+    height: 300px;
+  }
+
+  .mushroom-icon {
+    height: 100px;
+    bottom: -100px;
+    left: 0px;
   }
 }
 
@@ -1489,15 +1570,15 @@ strong {
   .artist3 {
     margin-top: 20px;
   }
+
+  .countdown-container {
+    margin: auto;
+  }
+
 }
 
 
-
 @media screen and (max-width: 766px) {
-  .blank-space {
-    height: 370px;
-  }
-
   .hand-band img {
     width: 60%;
     height: auto;
@@ -1508,15 +1589,21 @@ strong {
 
 }
 
+@media screen and (max-width: 763px) {
+  .blank-space {
+    height: 330px;
+  }
+}
+
 @media screen and (max-width: 735px) {
   .blank-space {
-    height: 390px;
+    height: 340px;
   }
 }
 
 @media screen and (max-width: 715px) {
   .blank-space {
-    height: 410px;
+    height: 350px;
   }
 }
 
@@ -1535,24 +1622,8 @@ strong {
     height: 40%;
   }
 
-  .blank-space {
-    height: 420px;
-  }
-
   .hand-band img {
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .blank-space {
-    height: 430px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .blank-space {
-    height: 440px;
   }
 }
 
@@ -1566,6 +1637,10 @@ strong {
     right: 50px;
     rotate: -20deg;
     transform: translate(-50%, -50%);
+  }
+
+  .blank-space {
+    height: 370px;
   }
 }
 
@@ -1846,22 +1921,23 @@ strong {
 @media screen and (max-width: 390px) {
 
   .custom-img2 {
+    position: absolute;
     height: 30%;
+    top: 0;
+    left: 0;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  h1:nth-child(1) {
-    font-size: 48px;
-    padding-top: 30vw;
+  .text-title-hero {
+    padding-top: 60px;
   }
+}
 
-  h1:nth-child(2) {
-    font-size: 48px;
-    line-height: 100%;
-  }
-
-  h2:nth-child(3) {
-    line-height: 20px;
-    font-size: 28px;
+@media screen and (max-width: 373px) {
+  .text-title-hero h1:nth-child(2) {
+    font-size: 50px;
   }
 }
 

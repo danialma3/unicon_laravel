@@ -1,0 +1,141 @@
+/* page styles */
+.ax-hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* carousel styles */
+.carousel-custom {
+  --carousel-height: 400px;
+  --carousel-width: auto;
+  --carousel-item-height: 200px;
+  --carousel-item-width: auto;
+
+  width: 95%;
+
+  margin: auto;
+
+  position: relative;
+}
+
+.carousel-custom-container {
+  align-items: center;
+  display: flex;
+  min-height: var(--carousel-height);
+  margin: 0 auto;
+  max-width: var(--carousel-width);
+  position: relative;
+}
+
+.carousel-custom-item {
+  height: var(--carousel-item-height);
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  width: var(--carousel-item-width);
+  z-index: 0;
+}
+
+.carousel-custom-item-1 {
+  left: 15%;
+  opacity: 0.4;
+}
+
+.carousel-custom-item-2,
+.carousel-custom-item-4 {
+  height: calc(var(--carousel-item-height) * 1.5);
+  opacity: 1;
+  width: calc(var(--carousel-item-width) * 1.5);
+  z-index: 1;
+}
+
+.carousel-custom-item-2 {
+  left: 30%;
+}
+
+.carousel-custom-item-3 {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  height: calc(var(--carousel-item-height) * 2);
+  opacity: 1;
+  left: 50%;
+  width: calc(var(--carousel-item-width) * 2);
+  z-index: 2;
+}
+
+.carousel-custom-item-4 {
+  left: 70%;
+}
+
+.carousel-custom-item-5 {
+  left: 85%;
+  opacity: 0.4;
+}
+
+.carousel-custom-controls {
+  width: 100%;
+  display: block;
+}
+
+.carousel-custom-container {
+  z-index: 1;
+}
+
+.carousel-custom-control-previous {
+  bottom: 40%;
+  z-index: 3;
+  position: absolute;
+  left: 15%;
+  width: 50px;
+  height: 100px;
+  background: white;
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.carousel-custom-control-next {
+  bottom: 40%;
+  z-index: 3;
+
+  right: 15%;
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background: white;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+@media all and (max-width: 1399px) {
+
+  .carousel-custom-control-previous {
+    left: 10%;
+  }
+
+  .carousel-custom-control-next {
+    right: 10%;
+  }
+}
+
+
+@media all and (max-width: 1399px) {
+
+  .carousel-custom-control-previous {
+    left: 3%;
+  }
+
+  .carousel-custom-control-next {
+    right: 3%;
+  }
+}
+
+@media all and (max-width: 992px) {
+
+  .carousel-custom {
+    display: none;
+  }
+}

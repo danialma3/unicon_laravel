@@ -4,7 +4,7 @@
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="blank-div-hero"></div>
-            <div class="col-12 mt-auto text-center">
+            <div class="col-12 mt-auto text-center text-title-hero">
                 <h1 class="text-white">EXPERIENCE</h1>
                 <h1>POP CULTURE</h1>
                 <h2>LIKE NEVER BEFORE</h2>
