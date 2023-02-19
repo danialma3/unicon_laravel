@@ -1237,6 +1237,37 @@ strong {
   animation: spinAround 2s linear infinite;
 }
 
+
+/*---------------------------------------
+  SPONSOR
+-----------------------------------------*/
+.title-sponsors {
+  font-size: 14px;
+  margin: 20px 0 0 0;
+}
+
+.padd-btm-40 {
+  padding-bottom: 40px;
+}
+
+.height-40 {
+  height: 40px;
+}
+
+.padd-btm-30 div {
+  padding-left: 30px;
+}
+
+.mrg-tp-20 {
+  margin: 20px 0 0 0;
+}
+
+.med-partner img {
+  height: 20px;
+  margin: 5px 10px;
+
+}
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg)
@@ -1555,7 +1586,7 @@ strong {
     margin: auto;
   }
 
-  
+
 }
 
 @media screen and (max-width: 763px) {
