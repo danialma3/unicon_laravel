@@ -1109,6 +1109,10 @@ strong {
   border-left: 40px solid white;
 }
 
+#carouselExampleControlsNoTouching {
+  display: none;
+}
+
 /*---------------------------------------
   CONTACT
 -----------------------------------------*/
@@ -1308,7 +1312,6 @@ strong {
   }
 
 
-
 }
 
 
@@ -1318,6 +1321,12 @@ strong {
     bottom: -200px;
     left: -80px;
   }
+}
+
+@media screen and (max-width: 992px) {
+  #carouselExampleControlsNoTouching {
+    display: block;
+  } 
 }
 
 
@@ -1331,6 +1340,10 @@ strong {
     rotate: 30deg;
     transform: translate(-50%, -50%);
   }
+
+  #carouselExampleControlsNoTouching {
+    display: block;
+  } 
 
 
   .blank-div-hero {

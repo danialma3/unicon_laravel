@@ -27,9 +27,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div class="carousel-custom"></div>
+
     </div>
 </section>
-
-<div>
-    <div class="carousel-custom"></div>
-</div>
