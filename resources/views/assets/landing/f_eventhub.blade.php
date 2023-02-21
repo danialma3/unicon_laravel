@@ -8,7 +8,7 @@
 <section class="eventhub-section " id="section_4">
     <div class="container text-center">
         <h2 class="text-white">Events Hub</h2>
-        <p class="text-white ">Road to Event Project You Might Love</p>
+        <p class="text-white font-montserrat">Road to Event Project You Might Love</p>
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">

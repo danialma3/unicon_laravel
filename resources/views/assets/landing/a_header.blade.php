@@ -21,6 +21,10 @@
     <link href="{{asset('assets/tema')}}/css/templatemo-festava-live.css?07022023.001" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/images/unicontab.png" rel="shortcut icon">
 
+    <!-- import font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
+
     <link rel="stylesheet" href="{{asset('assets/tema')}}/css/carousel.css">
 </head>
 

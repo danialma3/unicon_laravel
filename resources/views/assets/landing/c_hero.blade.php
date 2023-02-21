@@ -34,14 +34,12 @@
                 </ul>
             </div> -->
 
-            <p class="text-white me-3 text-center text-coming-soon">COMING ON MAY 2023</p>
+            <p class="text-white me-3 text-center text-coming-soon font-montserrat">COMING ON <strong>MAY 2023</strong></p>
             <div class="text-description">
-
-                <p class="text-white me-3 text-center ">Unite Convention Kalimantan Selatan adalah platform untuk
+                <p class="text-white me-3 text-center font-montserrat">Unite Convention Kalimantan Selatan adalah platform untuk
                     bersosialisasi bersama komunitas dan menikmati ragam kultur pop
                     dengan menciptakan pengalaman menarik, unik dan tak terlupakan.</p>
                 <img class="tanggal27-28" src="{{asset('assets/tema')}}/images/template/tanggal27-28.png" type="png" poster="">
-
             </div>
         </div>
     </div>

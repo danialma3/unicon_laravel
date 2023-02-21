@@ -11,7 +11,7 @@
                     <div class="card-body bg-transparent countdown-container">
 
                         <h2 class="text-white">Ticket <br>Presales</h2>
-                        <p class="text-white">opening in</p>
+                        <p class="text-white font-montserrat" >opening in</p>
                         <div id="countdown" style="width: fit-content;">
                             <div class=" d-flex align-items-end">
                                 <p class="days"><span id="days"></span></p>
