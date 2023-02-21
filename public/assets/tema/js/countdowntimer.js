@@ -10,7 +10,7 @@
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
-        birthday = "03/3/2023";
+        birthday = "03/4/2023";
 
     today = mm + "/" + dd + "/" + yyyy;
 

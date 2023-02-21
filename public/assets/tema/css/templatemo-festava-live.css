@@ -60,6 +60,10 @@ body {
   font-family: 'Basement Grotesque Roman', sans-serif;
 }
 
+.font-press-start {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 /*---------------------------------------
   TYPOGRAPHY
 -----------------------------------------*/
@@ -764,28 +768,25 @@ strong {
 
 #countdown div div {
   display: inline-block;
-  font-size: .9em;
+  font-size: 100px;
   list-style-type: none;
 }
 
 .text-days {
   /* display: inline-block; */
   /* display: block; */
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: bold;
   color: white;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
 .countdown-container h2 {
   /* Strech scale harus sama dengan inline display block */
-
   display: inline-block;
-  line-height: 0.8;
-
-
+  line-height: 1;
 }
 
 .countdown-container p {
@@ -806,9 +807,9 @@ strong {
 .hours,
 .minutes,
 .petik {
-  font-size: 50px !important;
+  font-size: 100px;
   font-style: italic;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: white;
 
   /* display: inline-block; */
@@ -838,6 +839,11 @@ strong {
   width: 200px;
   margin: 0 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.guest-description img:nth-child(1) {
+  background-color: #340996;
+  z-index: 4;
 }
 
 .guest-description a:nth-child(1) img {
@@ -1806,6 +1812,13 @@ strong {
 
   .guest-description {
     margin: 0 0 20px 0;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .petik {
+    font-size: 80px !important;
   }
 
   h1:nth-child(1) {

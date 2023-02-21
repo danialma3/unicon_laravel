@@ -1,7 +1,7 @@
 <section class="ticketinfo-section border-0" id="section_5">
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col co;">
+        <div class="row row-cols-1 row-cols-md-2 g-4" style="width:100%">
+            <div class="col;">
                 <div class="card bg-transparent border-0 hand-band">
                     <a href="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" data-toggle="lightbox">
                         <img class="card-img-top img-fluid" src="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" type="png" poster="">
@@ -15,9 +15,9 @@
                         <h2 class="text-white font-Basement-Grotesque-Roman">Ticket <br>Presales</h2>
                         <p class="text-white font-montserrat">opening in</p>
                         <div id="countdown" style="width: fit-content;">
-                            <div class=" d-flex align-items-end">
+                            <div class=" d-flex align-items-end font-press-start">
                                 <p class="days"><span id="days"></span></p>
-                                <p class="text-days"> Days </p>
+                                <p class="text-days font-Basement-Grotesque-Roman"><span> Days </span></p>
                                 <p class="hours"><span id="hours"></span></p>
                                 <p class="petik"><span id="petik">:</span></p>
                                 <p class="minutes"><span id="minutes"></span></p>
