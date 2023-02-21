@@ -837,7 +837,7 @@ strong {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.guest-description img:nth-child(1) {
+.guest-description a:nth-child(1) img {
   background-color: #340996;
   z-index: 4;
 }

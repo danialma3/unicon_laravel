@@ -3,7 +3,9 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col co;">
                 <div class="card bg-transparent border-0 hand-band">
-                    <img src="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" type="png" poster="">
+                    <a href="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" data-toggle="lightbox">
+                        <img class="card-img-top img-fluid" src="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" type="png" poster="">
+                    </a>
                 </div>
             </div>
             <div class="col">
@@ -11,7 +13,7 @@
                     <div class="card-body bg-transparent countdown-container">
 
                         <h2 class="text-white">Ticket <br>Presales</h2>
-                        <p class="text-white font-montserrat" >opening in</p>
+                        <p class="text-white font-montserrat">opening in</p>
                         <div id="countdown" style="width: fit-content;">
                             <div class=" d-flex align-items-end">
                                 <p class="days"><span id="days"></span></p>

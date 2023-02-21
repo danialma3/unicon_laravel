@@ -12,10 +12,14 @@
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{asset('assets/tema')}}/images/template/SPLASH_crushgear.png" type="png" class="d-block w-75" style="margin: auto;" alt="...">
+                    <a href="{{asset('assets/tema')}}/images/template/SPLASH_crushgear.png" data-toggle="lightbox" data-gallery="gallery-eventhub0" >
+                        <img src="{{asset('assets/tema')}}/images/template/SPLASH_crushgear.png" type="png" class="d-block w-75" style="margin: auto;" alt="...">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('assets/tema')}}/images/template/SPLASH_mockup.png" type="png" class="d-block w-75" style="margin: auto;" alt="...">
+                    <a href="{{asset('assets/tema')}}/images/template/SPLASH_mockup.png" data-toggle="lightbox" data-gallery="gallery-eventhub0" >
+                        <img src="{{asset('assets/tema')}}/images/template/SPLASH_mockup.png" type="png" class="d-block w-75" style="margin: auto;" alt="...">
+                    </a>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
