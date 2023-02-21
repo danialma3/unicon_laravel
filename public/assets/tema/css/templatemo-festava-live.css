@@ -56,6 +56,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.font-Basement-Grotesque-Roman {
+  font-family: 'Basement Grotesque Roman', sans-serif;
+}
 
 /*---------------------------------------
   TYPOGRAPHY
@@ -1897,15 +1900,15 @@ strong {
 
 @media all and (max-width: 443px) {
   .artist1 {
-    margin-right: 50px !important;
+    margin-right: 0 !important;
   }
 
   .artist2 {
-    margin-left: 20px !important;
+    margin-left: 0 !important;
   }
 
   .artist3 {
-    margin-right: 50px !important;
+    margin-right: 0 !important;
   }
 
 

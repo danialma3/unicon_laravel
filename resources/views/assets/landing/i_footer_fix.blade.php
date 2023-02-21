@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                <p class="copyright-text">Copyright © 2023 UNITE CONVENTIONS</p>
+                <p class="copyright-text font-montserrat">Copyright © 2023 UNITE CONVENTIONS</p>
             </div>
         </div>
     </div>

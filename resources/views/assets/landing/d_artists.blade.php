@@ -1,6 +1,6 @@
 <section class="artists-section section-padding" id="section_2" style="border: transparent">
     <div class="container text-center text-white">
-        <h2 class="text-white">Guest Stars</h2>
+        <h2 class="text-white font-Basement-Grotesque-Roman">Guest Stars</h2>
         <p class="text-white font-montserrat">National & Local Talent</p>
         <div class="d-flex justify-content-center flex-wrap">
             <div class="card border-0 guest-description artist1">

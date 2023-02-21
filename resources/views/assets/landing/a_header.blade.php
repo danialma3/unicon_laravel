@@ -23,7 +23,7 @@
 
     <!-- import font -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/22a5057c44af95176db4b4c5dd40fb15?family=Basement+Grotesque+Roman" rel="stylesheet" type="text/css"/>
 
     <link rel="stylesheet" href="{{asset('assets/tema')}}/css/carousel.css">
 </head>

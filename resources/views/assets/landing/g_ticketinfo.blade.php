@@ -12,7 +12,7 @@
                 <div class="card bg-transparent border-0">
                     <div class="card-body bg-transparent countdown-container">
 
-                        <h2 class="text-white">Ticket <br>Presales</h2>
+                        <h2 class="text-white font-Basement-Grotesque-Roman">Ticket <br>Presales</h2>
                         <p class="text-white font-montserrat">opening in</p>
                         <div id="countdown" style="width: fit-content;">
                             <div class=" d-flex align-items-end">
