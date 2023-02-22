@@ -17,6 +17,13 @@
 <script src="{{asset('assets/tema')}}/js/custom.js"></script>
 <script defer src="{{asset('assets/tema')}}/js/carousel.js"></script>
 <script src="{{asset('assets/tema')}}/js/countdowntimer.js"></script>
+<script src="{{asset('assets/lightbox')}}/js/lightbox.js"></script>
+
+<script>
+    lightbox.option({
+        'disableScrolling': true,
+    })
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 </body>

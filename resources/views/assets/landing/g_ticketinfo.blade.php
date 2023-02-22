@@ -3,7 +3,7 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 container-img-text" style="width:100%">
             <div class="col d-flex align-items-center">
                 <div class="card bg-transparent border-0 hand-band ">
-                    <a class="d-flex justify-content-end " href="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" data-toggle="lightbox">
+                    <a class="d-flex justify-content-end " href="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" data-lightbox="image-sneak-hand-band">
                         <img class="card-img-top" src="{{asset('assets/tema')}}/images/template/Paper_Wristbands_Mockup_01.png" type="png" poster="">
                     </a>
                 </div>

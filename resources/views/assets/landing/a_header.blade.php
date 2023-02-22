@@ -19,6 +19,7 @@
     <link href="{{asset('assets/tema')}}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/css/bootstrap-icons.css" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/css/templatemo-festava-live.css?07022023.001" rel="stylesheet">
+    <link href="{{asset('assets/lightbox')}}/css/lightbox.css" rel="stylesheet" />
     <link href="{{asset('assets/tema')}}/images/unicontab.png" rel="shortcut icon">
 
     <!-- import font -->
