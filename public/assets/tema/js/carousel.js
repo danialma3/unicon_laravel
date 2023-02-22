@@ -47,16 +47,28 @@ class Carousel {
 
     // Take dataset array and append items to container
     this.carouselData.forEach((item, index) => {
-      const carouselItem = item.src ? document.createElement('img') : document.createElement('div');
+      const carouselItem = item.src ? document.createElement('a') : document.createElement('div');
 
       container.append(carouselItem);
-      
+
+      carouselItem.setAttribute('href', item.src);
+      carouselItem.setAttribute('data-lightbox', `slider-${index + 1}`);
       // Add item attributes
       carouselItem.className = `carousel-custom-item carousel-custom-item-${index + 1}`;
-      carouselItem.src = item.src;
-      carouselItem.setAttribute('loading', 'lazy');
+
       // Used to keep track of carousel items, infinite items possible in carousel however min 5 items required
       carouselItem.setAttribute('data-index', `${index + 1}`);
+
+
+      const carouselItemImg = item.src ? document.createElement('img'): document.createElement('div');
+
+
+      carouselItem.append(carouselItemImg);
+
+      carouselItemImg.src = item.src;
+      carouselItemImg.className = `carousel-img`;
+
+      carouselItemImg.setAttribute('loading', 'lazy');
     });
 
     this.carouselOptions.forEach((option) => {

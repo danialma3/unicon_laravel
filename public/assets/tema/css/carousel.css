@@ -109,6 +109,11 @@
   border: 0;
 }
 
+.carousel-img {
+  height: 100%;
+  width: auto;
+}
+
 @media all and (max-width: 1399px) {
 
   .carousel-custom-control-previous {
