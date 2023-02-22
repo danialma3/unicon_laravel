@@ -134,8 +134,8 @@ class Carousel {
     });
 
     // Using the first 5 items in data array update content of carousel items in view
-    this.carouselData.slice(0, 5).forEach((data, index) => {
-      document.querySelector(`.carousel-custom-item-${index + 1}`).src = data.src;
+    this.carouselData.slice(0, 2).forEach((data, index) => {
+      document.querySelector(`.carousel-custom-item-${index + 3}`).src = data.src;
     });
   }
 
