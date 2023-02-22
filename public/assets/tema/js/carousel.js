@@ -6,14 +6,6 @@ class Carousel {
     this.carouselOptions = ['previous', 'next'];
     this.carouselData = [
       {
-        'id': '1',
-        'src': '../assets/tema/images/template/SPLASH_crushgear.png',
-      },
-      {
-        'id': '2',
-        'src': '../assets/tema/images/template/SPLASH_mockup.png',
-      },
-      {
         'id': '3',
         'src': '../assets/tema/images/template/SPLASH_crushgear.png',
       },
@@ -21,12 +13,8 @@ class Carousel {
         'id': '4',
         'src': '../assets/tema/images/template/SPLASH_mockup.png',
       },
-      {
-        'id': '5',
-        'src': '../assets/tema/images/template/SPLASH_crushgear.png',
-      }
     ];
-    this.carouselInView = [1, 2, 3, 4, 5];
+    this.carouselInView = [3, 4];
     this.carouselContainer;
     this.carouselPlayState;
   }
@@ -52,12 +40,12 @@ class Carousel {
       container.append(carouselItem);
 
       carouselItem.setAttribute('href', item.src);
-      carouselItem.setAttribute('data-lightbox', `slider-${index + 1}`);
+      carouselItem.setAttribute('data-lightbox', `slider-${index + 3}`);
       // Add item attributes
-      carouselItem.className = `carousel-custom-item carousel-custom-item-${index + 1}`;
+      carouselItem.className = `carousel-custom-item carousel-custom-item-${index + 3}`;
 
       // Used to keep track of carousel items, infinite items possible in carousel however min 5 items required
-      carouselItem.setAttribute('data-index', `${index + 1}`);
+      carouselItem.setAttribute('data-index', `${index + 3}`);
 
 
       const carouselItemImg = item.src ? document.createElement('img'): document.createElement('div');
@@ -146,8 +134,8 @@ class Carousel {
     });
 
     // Using the first 5 items in data array update content of carousel items in view
-    this.carouselData.slice(0, 5).forEach((data, index) => {
-      document.querySelector(`.carousel-custom-item-${index + 1}`).src = data.src;
+    this.carouselData.slice(0, 2).forEach((data, index) => {
+      document.querySelector(`.carousel-custom-item-${index + 3}`).src = data.src;
     });
   }
 
