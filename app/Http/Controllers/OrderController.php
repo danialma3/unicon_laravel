@@ -46,6 +46,8 @@ class OrderController extends Controller
             "alamat" => "required",
             "qty" => "required",
         ]);
+
+
         $result = Order::create([
 
             "nama_awal" => $request->nama_awal,
@@ -55,7 +57,7 @@ class OrderController extends Controller
             "email" => $request->email,
             "nomor_hp" => $request->nomor_hp,
             "alamat" => $request->alamat,
-            "status" => NULL,
+            "status" => "Unpaid",
             "transaction_id" => NULL,
             "order_id" => NULL,
             "qty" => $request->qty,
@@ -77,7 +79,7 @@ class OrderController extends Controller
     public function show(Order $order)
     {
         // Set your Merchant Server Key
-        \Midtrans\Config::$serverKey = env('MIDTRANS_SERVER_KEY');
+        \Midtrans\Config::$serverKey = config("midtrans.server_key");
         // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
         \Midtrans\Config::$isProduction = false;
         // Set sanitization on (default)
@@ -86,30 +88,57 @@ class OrderController extends Controller
         \Midtrans\Config::$is3ds = true;
 
 
-        $params = array(
-            'transaction_details' => array(
-                'order_id' => rand(),
-                'gross_amount' => 10000,
-            ),
-            'item_details' => array(
-                [
-                    'id' => 'b02',
-                    'price' => 30000,
-                    'quantity' => $order->qty,
-                    'name' => 'Tiket Reguler'
-                ]
-            ),
-            'customer_details' => array(
-                'first_name' => $order->nama_awal,
-                'last_name' => $order->nama_belakang,
-                'email' => $order->email,
-                'phone' => $order->nomor_hp,
-            ),
-        );
+        if ($order->payment_code == NULL) {
 
-        $token = \Midtrans\Snap::getSnapToken($params);
+            $params = array(
+                'transaction_details' => array(
+                    'order_id' =>  $order->id,
+                    'gross_amount' => $order->gross_amount,
+                ),
+                'item_details' => array(
+                    [
+                        'id' => 'D1',
+                        'price' => 30000,
+                        'quantity' => $order->qty,
+                        'name' => 'Tiket Reguler'
+                    ]
+                ),
+
+                'customer_details' => array(
+                    'first_name' => $order->nama_awal,
+                    'last_name' => $order->nama_belakang,
+                    'email' => $order->email,
+                    'phone' => $order->nomor_hp,
+                ),
+            );
+
+            $token = \Midtrans\Snap::getSnapToken($params);
+
+            Order::where('id', $order->id)->update([
+                "payment_code" => $token,
+                'order_id' =>  $order->id
+            ]);
+        } else {
+            $token = $order->payment_code;
+        }
+
         return view("assets.detail_order.form_tiket", compact("order", 'token'));
     }
+
+
+    public function callback(Request $request)
+    {
+        $serverKey = config("midtrans.server_key");
+        $hashed = hash("sha512", $request->order_id . $request->status_code . $request->gross_amount . $serverKey);
+        if ($hashed == $request->signature_key) {
+            if ($request->transaction_status == "settlement") {
+                $order = Order::find($request->order_id);
+                $order->update(['status' => "paid"]);
+            }
+        }
+    }
+
+
     public function payment(Request $request, $id)
     {
         $json = json_decode($request->get('json'));
@@ -118,10 +147,10 @@ class OrderController extends Controller
         $update->transaction_id = $json->transaction_id ? $json->transaction_id : NULL;
         $update->order_id = $json->order_id ? $json->order_id : NULL;
         $update->payment_type = $json->payment_type ? $json->payment_type : NULL;
-        $update->payment_code = isset($json->payment_code) ? $json->payment_code : NULL;
+        $update->payment_code = isset($json->va_number[0]->va_number) ? $json->payment_code : NULL;
         $update->pdf_url = isset($json->pdf_url) ? $json->pdf_url : NULL;
         $update->save();
-        return redirect('/detail-order/' . $update->id);
+        return redirect()->to("detail-order/$id")->with('status', 'Data Berhasil Dimasukan');
     }
 
     /**
