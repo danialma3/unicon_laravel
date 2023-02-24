@@ -52,13 +52,13 @@
                                   is-invalid
                                 @enderror" placeholder="Email" value="{{old('email')}}">
 
-            <input type="number" class="form-control @error('nomor_hp')
+            <input type="number" class="input-phone form-control @error('nomor_hp')
                                   is-invalid
                                 @enderror" name="nomor_hp" placeholder="No Telepon (eg. 082134567890)" value="{{old('nomor_hp')}}">
 
             <input type="number" class="form-control @error('qty')
                                   is-invalid
-                                @enderror" name="qty" placeholder="qty" min="1" max="10" value="{{old('qty')}}">
+                                @enderror" name="qty" placeholder="Jumlah tiket" min="1" max="10" value="{{old('qty')}}">
 
             <textarea name="alamat" rows="3" class="form-control @error('alamat')
                                   is-invalid
