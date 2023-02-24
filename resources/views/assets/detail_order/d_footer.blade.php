@@ -1,4 +1,4 @@
-</main>
+<!-- </main>
 <footer class="site-footer">
     <div class="site-footer-top">
         <div class="container">
@@ -117,6 +117,17 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                <p class="copyright-text">Copyright © 2023 UNITE CONVENTIONS</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- JAVASCRIPT FILES -->
@@ -143,7 +154,7 @@
                 alert("wating your payment!");
                 console.log(result);
                 // send_responee_to_form(result);
-                
+
             },
             onError: function(result) {
                 /* You may add your own implementation here */
