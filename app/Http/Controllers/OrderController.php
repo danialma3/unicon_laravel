@@ -53,7 +53,7 @@ class OrderController extends Controller
             "nama_awal" => $request->nama_awal,
             "nama_belakang" => $request->nama_belakang,
             "tmpt_lahir" => $request->tmpt_lahir,
-            "tgl_lahir" => $request->tgl_lahir,
+            "tgl_lahir" => date('Y-m-d',strtotime($request->tgl_lahir)),
             "email" => $request->email,
             "nomor_hp" => $request->nomor_hp,
             "alamat" => $request->alamat,
