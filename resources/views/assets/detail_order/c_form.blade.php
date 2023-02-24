@@ -7,7 +7,7 @@
             <div class="col-lg-8 col-10 mx-auto">
                 <div class="custom-form ticket-form mb-5 mb-lg-0">
 
-                <h4 class="font-Basement-Grotesque-Roman text-center "> Detail Order</h4>
+                    <h4 class="font-Basement-Grotesque-Roman text-center "> Detail Order</h4>
 
                     <div class="row">
                         <table class="table table-borderless col">
@@ -94,7 +94,10 @@
                                 </thead>
                             </tr>
                         </table>
-                        <button type="submit" id='pay-button'>Bayar Boss</button>
+
+                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                            <button type="submit" id='pay-button' class="form-control">Bayar Tiket</button>
+                        </div>
 
                         <form action='{{url("/detail-order/$order->id")}}' id="submit_form" method="post">
                             @csrf
