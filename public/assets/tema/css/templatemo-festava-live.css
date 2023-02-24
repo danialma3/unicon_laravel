@@ -1297,13 +1297,15 @@ strong {
 }
 
 /*---------------------------------------
-  Slider
+  DETAIL ORDER
 -----------------------------------------*/
 
-/* adapted from  https://codepen.io/glebkema/pen/Xjryjd*/
+@media all and (max-width: 767px) {
+  .blank-row {
+    display: none;
+  }
 
-
-/* adapted from  https://codepen.io/glebkema/pen/Xjryjd*/
+}
 
 
 /*---------------------------------------

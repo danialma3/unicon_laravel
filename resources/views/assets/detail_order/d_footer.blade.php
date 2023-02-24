@@ -124,7 +124,6 @@
 <script src="{{ asset('assets/tema') }}/js/popper.min.js"></script>
 <script src="{{ asset('assets/tema') }}/js/bootstrap.min.js"></script>
 <script src="{{ asset('assets/tema') }}/js/jquery.sticky.js"></script>
-<script src="{{ asset('assets/tema') }}/js/click-scroll.js?07022023.001"></script>
 <script src="{{ asset('assets/tema') }}/js/custom.js"></script>
 <script type="text/javascript">
     // For example trigger on button clicked, or any time you need

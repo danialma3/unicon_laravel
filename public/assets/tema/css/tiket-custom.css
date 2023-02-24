@@ -8,3 +8,16 @@
 .input-phone {
   -moz-appearance: textfield;
 }
+
+.font-Basement-Grotesque-Roman {
+  font-family: 'Basement Grotesque Roman', sans-serif;
+}
+
+@media all and (max-width: 767px) {
+  .blank-row {
+    display: none;
+  }
+
+}
+
+
