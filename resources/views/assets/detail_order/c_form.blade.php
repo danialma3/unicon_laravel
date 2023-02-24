@@ -7,7 +7,7 @@
             <div class="col-lg-8 col-10 mx-auto">
                 <div class="custom-form ticket-form mb-5 mb-lg-0">
 
-                    <h4 class="font-Basement-Grotesque-Roman text-center "> Detail Order</h4>
+                    <h2 class="text-center mb-4 font-Basement-Grotesque-Roman">Order Tiket</h2>
 
                     <div class="row">
                         <table class="table table-borderless col">

@@ -11,10 +11,10 @@
                     <img src="{{asset('assets/tema')}}/images/kalselunite.png?07022023.001" type="png" poster="">
                 </a>
             </div>
-            <a href="/" class="btn custom-btn d-lg-none ms-auto me-4">Kembali</a>
+            <a href="/" class="btn custom-btn d-lg-none ms-auto me-4">Home</a>
 
             <div class="collapse navbar-collapse d-flex flex-row justify-content-end" id="navbarNav">
-                <a href="/" class="btn custom-btn d-lg-block d-none">Kembali!</a>
+                <a href="/" class="btn custom-btn d-lg-block d-none">Home</a>
             </div>
         </div>
     </nav>

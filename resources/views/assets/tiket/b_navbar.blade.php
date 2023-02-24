@@ -14,7 +14,7 @@
                 </div>
             </div>
 
-            <a href="/" class="btn custom-btn d-lg-none ms-auto me-4 border-0">Kembali</a>
+            <a href="/" class="btn custom-btn d-lg-none ms-auto me-4 border-0">Home</a>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
@@ -23,7 +23,7 @@
                     <li class="nav-item">
                     </li>
                 </ul>
-                <a href="/" class="btn custom-btn d-lg-block d-none border-0">Kembali!</a>
+                <a href="/" class="btn custom-btn d-lg-block d-none border-0">Home</a>
             </div>
         </div>
     </nav>

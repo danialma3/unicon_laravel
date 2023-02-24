@@ -8,7 +8,7 @@
         <form class="custom-form ticket-form mb-5 mb-lg-0" action="{{route('tiket')}}" method="post" role="form">
           @csrf
 
-          <h2 class="text-center mb-4">Order Tiket</h2>
+          <h2 class="text-center mb-4 font-Basement-Grotesque-Roman">Order Tiket</h2>
 
           <div class="ticket-form-body">
             <div class="row">

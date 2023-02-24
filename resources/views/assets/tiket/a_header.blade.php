@@ -19,6 +19,8 @@
     <link href="{{asset('assets/tema')}}/css/tiket-custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link href="//db.onlinewebfonts.com/c/22a5057c44af95176db4b4c5dd40fb15?family=Basement+Grotesque+Roman" rel="stylesheet" type="text/css" />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
