@@ -137,19 +137,20 @@
                 /* You may add your own implementation here */
                 alert("payment success!");
                 console.log(result);
-                send_responee_to_form(result);
+                // send_responee_to_form(result);
             },
             onPending: function(result) {
                 /* You may add your own implementation here */
                 alert("wating your payment!");
                 console.log(result);
-                send_responee_to_form(result);
+                // send_responee_to_form(result);
+                
             },
             onError: function(result) {
                 /* You may add your own implementation here */
                 alert("payment failed!");
                 console.log(result);
-                send_responee_to_form(result);
+                // send_responee_to_form(result);
             },
             onClose: function() {
                 /* You may add your own implementation here */
