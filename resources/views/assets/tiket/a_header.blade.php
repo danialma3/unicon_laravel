@@ -14,11 +14,15 @@
     <title>UNICON KALSEL</title>
 
     <!-- CSS FILES -->
+    <link href="{{asset('assets/tema')}}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('assets/tema')}}/css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
-    <link href="{{asset('assets/tema')}}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{asset('assets/tema')}}/css/bootstrap-icons.css" rel="stylesheet">
+
     <link href="{{asset('assets/tema')}}/css/templatemo-festava-live.css?07022023.001" rel="stylesheet">
     <link href="{{asset('assets/tema')}}/images/unicontab.png" rel="shortcut icon">
 

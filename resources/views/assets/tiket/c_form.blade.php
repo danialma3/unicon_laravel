@@ -27,7 +27,6 @@
               </div>
             </div>
 
-
             <div class="row">
               <div class="col-lg-6 col-md-6 col-12">
                 <input type="text" name="tmpt_lahir" id="tmpt_lahir" class="form-control @error('tmpt_lahir')
@@ -35,11 +34,19 @@
                                 @enderror" placeholder="Tempat Lahir" value="{{old('tmpt_lahir')}}">
               </div>
 
-              <div class="col-lg-6 col-md-6 col-12">
+              <!-- <div class="col-lg-6 col-md-6 col-12">
                 <input type="date" name="tgl_lahir" id="tgl_lahir" class="form-control  @error('tgl_lahir')
                                   is-invalid
                                 @enderror" placeholder="" value="{{old('tgl_lahir')}}">
+              </div> -->
+
+              <div class="col-lg-6 col-md-6 col-12 date" id="datepicker" data-date-format="mm-dd-yyyy">
+                <input name="tgl_lahir" id="tgl_lahir" class="form-control  @error('tgl_lahir')
+                                  is-invalid
+                                @enderror" class="form-control" type="text" placeholder="Tanggal Lahir" value="{{old('tgl_lahir')}}" readonly />
+                <span class="input-group-addon"></span>
               </div>
+
             </div>
             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control @error('email')
                                   is-invalid
