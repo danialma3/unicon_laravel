@@ -15,16 +15,9 @@
 <script src="{{asset('assets/tema')}}/js/bootstrap.min.js"></script>
 <script src="{{asset('assets/tema')}}/js/jquery.sticky.js"></script>
 <script src="{{asset('assets/tema')}}/js/custom.js"></script>
+<script src="{{asset('assets/tema')}}/js/datepicker.custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
-<script>
-    $(function() {
-        $("#datepicker").datepicker({
-            autoclose: true,
-            todayHighlight: true
-        });
-    });
-</script>
 </body>
 
 </html>
