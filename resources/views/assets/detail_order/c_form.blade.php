@@ -93,11 +93,21 @@
                             </tr>
                         </table>
 
-                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                        {{-- <div class="col-lg-4 col-md-10 col-8 mx-auto">
                             <button type="submit" id='pay-button' class="form-control">Bayar Tiket</button>
+                        </div> --}}
+
+                        <div class="float-end">
+                            <button class="btn btn-primary float-end" id='pay-button'>Bayar Boss</button>
+                            @if ($order->status != 'Paid')
+                                <a href='{{ url("pembayaran-baru/$order->id ") }}'
+                                    class="btn btn-warning float-end me-1">Pembayaran Baru</a>
+                            @else
+                            @endif
                         </div>
 
-                        <form action='{{url("/detail-order/$order->id")}}' id="submit_form" method="post">
+
+                        <form action='{{ url("/detail-order/$order->id") }}' id="submit_form" method="post">
                             @csrf
                             <input type="hidden" name="json" id="json_callback">
                         </form>

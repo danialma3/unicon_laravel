@@ -13,8 +13,8 @@ class Order extends Model
     protected  $fillable = [
         "nama_awal",
         "nama_belakang",
-        "tmpt_lahir",
-        "tgl_lahir",
+        "tempat_lahir",
+        "tanggal_lahir",
         "email",
         "nomor_hp",
         "alamat",
@@ -25,6 +25,7 @@ class Order extends Model
         "gross_amount",
         "payment_type",
         "payment_code",
+        "snap_token",
         "pdf_url",
     ];
     protected $primaryKey = 'id';

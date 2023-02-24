@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Order;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -38,9 +39,8 @@ class OrderController extends Controller
     {
         $request->validate([
             "nama_awal" => "required",
-            "nama_belakang" => "required",
-            "tmpt_lahir" => "required",
-            "tgl_lahir" => "required",
+            "tempat_lahir" => "required",
+            "tanggal_lahir" => "required",
             "email" => "required",
             "nomor_hp" => "required",
             "alamat" => "required",
@@ -51,9 +51,9 @@ class OrderController extends Controller
         $result = Order::create([
 
             "nama_awal" => $request->nama_awal,
-            "nama_belakang" => $request->nama_belakang,
-            "tmpt_lahir" => $request->tmpt_lahir,
-            "tgl_lahir" => date('Y-m-d',strtotime($request->tgl_lahir)),
+            "nama_belakang" => " ",
+            "tempat_lahir" => $request->tempat_lahir,
+            "tanggal_lahir" => $request->tanggal_lahir,
             "email" => $request->email,
             "nomor_hp" => $request->nomor_hp,
             "alamat" => $request->alamat,
@@ -70,6 +70,12 @@ class OrderController extends Controller
         return redirect()->to("detail-order/$result->id")->with('status', 'Data Berhasil Dimasukan');
     }
 
+
+    public function pembayaran_baru(Order $order)
+    {
+        return view('assets.pembayaran_baru.form_tiket', compact('order'));
+    }
+
     /**
      * Display the specified resource.
      *
@@ -78,6 +84,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
+
         // Set your Merchant Server Key
         \Midtrans\Config::$serverKey = config("midtrans.server_key");
         // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
@@ -88,8 +95,8 @@ class OrderController extends Controller
         \Midtrans\Config::$is3ds = true;
 
 
-        if ($order->payment_code == NULL) {
-
+        if ($order->snap_token == NULL) {
+            $id = rand();
             $params = array(
                 'transaction_details' => array(
                     'order_id' =>  $order->id,
@@ -115,11 +122,11 @@ class OrderController extends Controller
             $token = \Midtrans\Snap::getSnapToken($params);
 
             Order::where('id', $order->id)->update([
-                "payment_code" => $token,
+                "snap_token" => $token,
                 'order_id' =>  $order->id
             ]);
         } else {
-            $token = $order->payment_code;
+            $token = $order->snap_token;
         }
 
         return view("assets.detail_order.form_tiket", compact("order", 'token'));
@@ -134,6 +141,22 @@ class OrderController extends Controller
             if ($request->transaction_status == "settlement") {
                 $order = Order::find($request->order_id);
                 $order->update(['status' => "paid"]);
+
+                // Email
+                $data["email"] = "bb457640@gmail.com";
+                $data["title"] = "dari dani";
+                $data["body"] = "This is Demo";
+                $data["order_id"] = $request->order_id;
+
+                // //Generates a QrCode with an image centered in the middle.
+                // QrCode::format('png')->merge('path-to-image.png')->generate();
+
+
+
+                Mail::send('email_template', $data, function ($message) use ($data) {
+                    $message->to($data["email"], $data["email"])
+                        ->subject($data["title"]);
+                });
             }
         }
     }
@@ -141,15 +164,15 @@ class OrderController extends Controller
 
     public function payment(Request $request, $id)
     {
-        $json = json_decode($request->get('json'));
-        $update = Order::find($id);;
-        $update->status = $json->transaction_status ? $json->transaction_status : NULL;
-        $update->transaction_id = $json->transaction_id ? $json->transaction_id : NULL;
-        $update->order_id = $json->order_id ? $json->order_id : NULL;
-        $update->payment_type = $json->payment_type ? $json->payment_type : NULL;
-        $update->payment_code = isset($json->va_number[0]->va_number) ? $json->payment_code : NULL;
-        $update->pdf_url = isset($json->pdf_url) ? $json->pdf_url : NULL;
-        $update->save();
+        // $json = json_decode($request->get('json'));
+        // $update = Order::find($id);;
+        // $update->status = $json->transaction_status ? $json->transaction_status : NULL;
+        // $update->transaction_id = $json->transaction_id ? $json->transaction_id : NULL;
+        // $update->order_id = $json->order_id ? $json->order_id : NULL;
+        // $update->payment_type = $json->payment_type ? $json->payment_type : NULL;
+        // $update->payment_code = isset($json->va_number[0]->va_number) ? $json->payment_code : NULL;
+        // $update->pdf_url = isset($json->pdf_url) ? $json->pdf_url : NULL;
+        // $update->save();
         return redirect()->to("detail-order/$id")->with('status', 'Data Berhasil Dimasukan');
     }
 

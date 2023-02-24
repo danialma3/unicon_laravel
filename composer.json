@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "3.4",
         "midtrans/midtrans-php": "^2.5",
+        "simplesoftwareio/simple-qrcode": "~4",
         "tumainimosha/laravel-coming-soon": "^1.4"
     },
     "require-dev": {

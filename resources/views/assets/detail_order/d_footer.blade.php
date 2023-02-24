@@ -136,6 +136,7 @@
 <script src="{{ asset('assets/tema') }}/js/bootstrap.min.js"></script>
 <script src="{{ asset('assets/tema') }}/js/jquery.sticky.js"></script>
 <script src="{{ asset('assets/tema') }}/js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
     // For example trigger on button clicked, or any time you need
     var payButton = document.getElementById('pay-button');
@@ -144,27 +145,47 @@
 
         window.snap.pay('{{ $token }}', {
             onSuccess: function(result) {
-                /* You may add your own implementation here */
-                alert("payment success!");
-                console.log(result);
-                // send_responee_to_form(result);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Pembayaran Berhasil, Mohon Tunggu Sebentar..',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                window.location.href = "{{ route('landing') }}";
+
             },
             onPending: function(result) {
                 /* You may add your own implementation here */
-                alert("wating your payment!");
+                Swal.fire(
+                    'Perhatian',
+                    'Segera Selesaikan Pembayaran Anda',
+                    'info'
+                )
                 console.log(result);
                 // send_responee_to_form(result);
 
             },
             onError: function(result) {
                 /* You may add your own implementation here */
-                alert("payment failed!");
-                console.log(result);
-                // send_responee_to_form(result);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Pembayaran Kamu Kadaluarsa',
+                    showConfirmButton: false,
+                    timer: 3000
+                })
             },
             onClose: function() {
-                /* You may add your own implementation here */
-                alert('you closed the popup without finishing the payment');
+                Swal.fire({
+                    position: 'center',
+                    icon: 'warning',
+                    title: 'Kamu Menutup Popup Tanpa Melakukan Pembayaran',
+                    showConfirmButton: false,
+                    timer: 3000
+                }) /* You may add your own implementation here */
+
+
             }
         })
     });

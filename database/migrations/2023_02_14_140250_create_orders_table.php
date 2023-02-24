@@ -17,8 +17,8 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string("nama_awal")->nullable();
             $table->string("nama_belakang")->nullable();
-            $table->string("tmpt_lahir")->nullable();
-            $table->date("tgl_lahir")->nullable();
+            $table->string("tempat_lahir")->nullable();
+            $table->date("tanggal_lahir")->nullable();
             $table->string("email")->nullable();
             $table->string("nomor_hp")->nullable();
             $table->text("alamat")->nullable();
@@ -29,6 +29,7 @@ class CreateOrdersTable extends Migration
             $table->bigInteger("gross_amount")->nullable();
             $table->string("payment_type")->nullable();
             $table->string("payment_code")->nullable();
+            $table->string("snap_token")->nullable();
             $table->string("pdf_url")->nullable();
             $table->timestamps();
         });
