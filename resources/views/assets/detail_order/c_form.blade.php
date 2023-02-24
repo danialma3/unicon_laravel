@@ -66,9 +66,7 @@
                             </tbody>
                         </table>
                     </div>
-
-
-                    <div class="row my-4">
+                    <div class="row my-0">
                         <table class="table">
                             <tr>
                                 <thead>
