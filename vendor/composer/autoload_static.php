@@ -86,6 +86,7 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'SimpleSoftwareIO\\QrCode\\' => 24,
+            'Sabberworm\\CSS\\' => 15,
         ),
         'R' => 
         array (
@@ -103,6 +104,7 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
+            'Pelago\\Emogrifier\\' => 18,
         ),
         'O' => 
         array (
@@ -316,6 +318,10 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         array (
             0 => __DIR__ . '/..' . '/simplesoftwareio/simple-qrcode/src',
         ),
+        'Sabberworm\\CSS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -360,6 +366,10 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'Pelago\\Emogrifier\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pelago/emogrifier/src',
         ),
         'Opis\\Closure\\' => 
         array (
@@ -529,6 +539,13 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
     );
 
     public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Snowfire\\Beautymail\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/snowfire/beautymail/src',
+            ),
+        ),
         'M' => 
         array (
             'Mockery' => 
@@ -3856,6 +3873,16 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'PHPUnit\\Util\\Xml\\SuccessfulSchemaDetectionResult' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/SuccessfulSchemaDetectionResult.php',
         'PHPUnit\\Util\\Xml\\ValidationResult' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/ValidationResult.php',
         'PHPUnit\\Util\\Xml\\Validator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Validator.php',
+        'Pelago\\Emogrifier\\Caching\\SimpleStringCache' => __DIR__ . '/..' . '/pelago/emogrifier/src/Caching/SimpleStringCache.php',
+        'Pelago\\Emogrifier\\CssInliner' => __DIR__ . '/..' . '/pelago/emogrifier/src/CssInliner.php',
+        'Pelago\\Emogrifier\\Css\\CssDocument' => __DIR__ . '/..' . '/pelago/emogrifier/src/Css/CssDocument.php',
+        'Pelago\\Emogrifier\\Css\\StyleRule' => __DIR__ . '/..' . '/pelago/emogrifier/src/Css/StyleRule.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\AbstractHtmlProcessor' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\CssToAttributeConverter' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/CssToAttributeConverter.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\HtmlNormalizer' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/HtmlNormalizer.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\HtmlPruner' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/HtmlPruner.php',
+        'Pelago\\Emogrifier\\Utilities\\ArrayIntersector' => __DIR__ . '/..' . '/pelago/emogrifier/src/Utilities/ArrayIntersector.php',
+        'Pelago\\Emogrifier\\Utilities\\CssConcatenator' => __DIR__ . '/..' . '/pelago/emogrifier/src/Utilities/CssConcatenator.php',
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',
         'PharIo\\Manifest\\Author' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Author.php',
@@ -4563,6 +4590,45 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
+        'Sabberworm\\CSS\\CSSList\\AtRuleBlockList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/AtRuleBlockList.php',
+        'Sabberworm\\CSS\\CSSList\\CSSBlockList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/CSSBlockList.php',
+        'Sabberworm\\CSS\\CSSList\\CSSList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/CSSList.php',
+        'Sabberworm\\CSS\\CSSList\\Document' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/Document.php',
+        'Sabberworm\\CSS\\CSSList\\KeyFrame' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/KeyFrame.php',
+        'Sabberworm\\CSS\\Comment\\Comment' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Comment/Comment.php',
+        'Sabberworm\\CSS\\Comment\\Commentable' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Comment/Commentable.php',
+        'Sabberworm\\CSS\\OutputFormat' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/OutputFormat.php',
+        'Sabberworm\\CSS\\OutputFormatter' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/OutputFormatter.php',
+        'Sabberworm\\CSS\\Parser' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Parser.php',
+        'Sabberworm\\CSS\\Parsing\\OutputException' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Parsing/OutputException.php',
+        'Sabberworm\\CSS\\Parsing\\ParserState' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Parsing/ParserState.php',
+        'Sabberworm\\CSS\\Parsing\\SourceException' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Parsing/SourceException.php',
+        'Sabberworm\\CSS\\Parsing\\UnexpectedEOFException' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Parsing/UnexpectedEOFException.php',
+        'Sabberworm\\CSS\\Parsing\\UnexpectedTokenException' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Parsing/UnexpectedTokenException.php',
+        'Sabberworm\\CSS\\Property\\AtRule' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Property/AtRule.php',
+        'Sabberworm\\CSS\\Property\\CSSNamespace' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Property/CSSNamespace.php',
+        'Sabberworm\\CSS\\Property\\Charset' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Property/Charset.php',
+        'Sabberworm\\CSS\\Property\\Import' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Property/Import.php',
+        'Sabberworm\\CSS\\Property\\KeyframeSelector' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Property/KeyframeSelector.php',
+        'Sabberworm\\CSS\\Property\\Selector' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Property/Selector.php',
+        'Sabberworm\\CSS\\Renderable' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Renderable.php',
+        'Sabberworm\\CSS\\RuleSet\\AtRuleSet' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php',
+        'Sabberworm\\CSS\\RuleSet\\DeclarationBlock' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php',
+        'Sabberworm\\CSS\\RuleSet\\RuleSet' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/RuleSet/RuleSet.php',
+        'Sabberworm\\CSS\\Rule\\Rule' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Rule/Rule.php',
+        'Sabberworm\\CSS\\Settings' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Settings.php',
+        'Sabberworm\\CSS\\Value\\CSSFunction' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/CSSFunction.php',
+        'Sabberworm\\CSS\\Value\\CSSString' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/CSSString.php',
+        'Sabberworm\\CSS\\Value\\CalcFunction' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/CalcFunction.php',
+        'Sabberworm\\CSS\\Value\\CalcRuleValueList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/CalcRuleValueList.php',
+        'Sabberworm\\CSS\\Value\\Color' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/Color.php',
+        'Sabberworm\\CSS\\Value\\LineName' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/LineName.php',
+        'Sabberworm\\CSS\\Value\\PrimitiveValue' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/PrimitiveValue.php',
+        'Sabberworm\\CSS\\Value\\RuleValueList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/RuleValueList.php',
+        'Sabberworm\\CSS\\Value\\Size' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/Size.php',
+        'Sabberworm\\CSS\\Value\\URL' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/URL.php',
+        'Sabberworm\\CSS\\Value\\Value' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/Value.php',
+        'Sabberworm\\CSS\\Value\\ValueList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/ValueList.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -4775,6 +4841,10 @@ class ComposerStaticInita89636e31b460638df7a7dc5ce549cea
         'SimpleSoftwareIO\\QrCode\\Image' => __DIR__ . '/..' . '/simplesoftwareio/simple-qrcode/src/Image.php',
         'SimpleSoftwareIO\\QrCode\\ImageMerge' => __DIR__ . '/..' . '/simplesoftwareio/simple-qrcode/src/ImageMerge.php',
         'SimpleSoftwareIO\\QrCode\\QrCodeServiceProvider' => __DIR__ . '/..' . '/simplesoftwareio/simple-qrcode/src/QrCodeServiceProvider.php',
+        'Snowfire\\Beautymail\\Beautymail' => __DIR__ . '/..' . '/snowfire/beautymail/src/Snowfire/Beautymail/Beautymail.php',
+        'Snowfire\\Beautymail\\BeautymailFacade' => __DIR__ . '/..' . '/snowfire/beautymail/src/Snowfire/Beautymail/BeautymailFacade.php',
+        'Snowfire\\Beautymail\\BeautymailServiceProvider' => __DIR__ . '/..' . '/snowfire/beautymail/src/Snowfire/Beautymail/BeautymailServiceProvider.php',
+        'Snowfire\\Beautymail\\CssInlinerPlugin' => __DIR__ . '/..' . '/snowfire/beautymail/src/Snowfire/Beautymail/CssInlinerPlugin.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',

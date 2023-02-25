@@ -28,6 +28,11 @@
                         Dashboard
                     </a>
 
+                    <a class="nav-link {{(request()->is('scan-tiket'))? 'active' : ''}}" href='{{route("scan")}}'>
+                        <div class="nav-link-icon"><i data-feather="home"></i></div>
+                        Scan Tiket
+                    </a>
+
 
                     <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#barang" aria-expanded="false" aria-controls="barang">
                         <div class="nav-link-icon"><i data-feather="align-justify"></i></div>

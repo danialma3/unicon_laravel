@@ -10,7 +10,7 @@ class TiketController extends Controller
     public function tiket()
     {
         // Email
-        $data["email"] = "bb457640@gmail.com";
+        $data["email"] = "mkhuzain17@gmail.com";
         $data["title"] = "dari dani";
         $data["body"] = "This is Demo";
 
@@ -23,6 +23,11 @@ class TiketController extends Controller
             $message->to($data["email"], $data["email"])
                 ->subject($data["title"]);
         });
+
+
+
         // return view('assets.tiket.form_tiket');
     }
+    
+
 }

@@ -29,8 +29,11 @@ Route::get('/detail-order/{order}', [App\Http\Controllers\OrderController::class
 Route::post('/detail-order/{order}', [App\Http\Controllers\OrderController::class, 'payment']);
 Route::get('/pembayaran-baru/{order}', [App\Http\Controllers\OrderController::class, 'pembayaran_baru'])->name('detail-order');
 
-Auth::routes();
 
+
+
+Auth::routes();
+// SEMUA ROUTE YANG PERLU LOGIN DITARO DIBAH SINI
 
 // Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -45,3 +48,5 @@ Route::get('/user-manajemen/create', [App\Http\Controllers\ManajemenController::
 
 
 // Tiket
+Route::get('/scan-tiket', [App\Http\Controllers\ScanController::class, 'scan'])->name('scan');
+Route::get('/cek-data/{id}', [App\Http\Controllers\ScanController::class, 'cek_data']);
